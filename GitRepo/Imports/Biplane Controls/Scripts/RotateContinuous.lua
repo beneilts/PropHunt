@@ -1,0 +1,1 @@
+script.parent:RotateContinuous(script:GetCustomProperty("Rotation"), script:GetCustomProperty("Mult"), true)
