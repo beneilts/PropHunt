@@ -103,6 +103,12 @@ Assets {
               Id: 4953072632551280387
             }
           }
+          Overrides {
+            Name: "cs:DeathSFX"
+            AssetReference {
+              Id: 16295239520551637413
+            }
+          }
         }
         WantsNetworking: true
         Collidable_v2 {

@@ -182,6 +182,10 @@ Assets {
               Z: -800
             }
           }
+          Overrides {
+            Name: "bp:Enable Spark Lines"
+            Bool: false
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"

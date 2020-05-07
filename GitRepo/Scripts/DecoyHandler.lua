@@ -1,6 +1,7 @@
 local trigger = script:GetCustomProperty("Trigger"):WaitForObject()
 local ABGS = require(script:GetCustomProperty("API"))
 local DamageSFX = script:GetCustomProperty("DamageSFX")
+local DeathSFX = script:GetCustomProperty("DeathSFX")
 local CollisionIsOn = false
 local Health = 100
 
@@ -35,6 +36,27 @@ function ApplyDamage(amount)
 	World.SpawnAsset(DamageSFX, {position = script:GetWorldPosition()})
 	-- Check for death
 	if Health <= 0 then
+		-- Get a random death sfx and play it
+		local deathSoundObject = World.SpawnAsset(DeathSFX, {position = script:GetWorldPosition()})
+		local soundTable = {}
+		for i=1, 3 do 
+			print("Adding Sound"..i.." to the table")
+			soundTable[i]=deathSoundObject:GetCustomProperty("Sound"..i)
+		end
+		
+		print("Table size: "..#soundTable)
+		
+		local randomValue = math.random(1,#soundTable) -- get a random number from 1 to the size of the table
+		local deathSoundReference = soundTable[randomValue]
+		print("Reference = "..deathSoundReference)
+		local deathSound = World.SpawnAsset(deathSoundReference, {position = script:GetWorldPosition()})
+		
+		--if deathSound:IsA("Audio") then
+			--print("== Playing "..deathSound.name)
+			--deathSound:Play()
+		--end
+						
+		-- Destroy decoy object
 		local rootTemplate = script:FindTemplateRoot()
 		rootTemplate:Destroy()
 	end

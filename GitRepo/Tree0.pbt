@@ -18,14 +18,20 @@ Objects {
   ChildIds: 16679247193346507455
   ChildIds: 16171268457374514667
   ChildIds: 3217845073768469753
-  ChildIds: 1073954693829522873
   ChildIds: 9132531048473045259
   ChildIds: 11738069464369191981
   ChildIds: 9119551732591600018
-  ChildIds: 8371484515429973568
-  ChildIds: 2082059296096399263
-  ChildIds: 3593048129717236030
-  ChildIds: 11811610128720300140
+  ChildIds: 1073954693829522873
+  ChildIds: 6452588685780568420
+  ChildIds: 6087285684356652445
+  ChildIds: 1485801863796282674
+  ChildIds: 10310019029877027008
+  ChildIds: 13145697387234695006
+  ChildIds: 6556469418511347147
+  ChildIds: 16433746726372659509
+  ChildIds: 4790773025567449935
+  ChildIds: 6214522209726083892
+  ChildIds: 11671541193908751943
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -38,13 +44,10 @@ Objects {
   }
 }
 Objects {
-  Id: 11811610128720300140
-  Name: "Possible death vfx"
+  Id: 11671541193908751943
+  Name: "Flash Blur Canvas"
   Transform {
     Location {
-      X: -1245.14795
-      Y: 131.587051
-      Z: 8.77172852
     }
     Rotation {
     }
@@ -55,43 +58,40 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Enable Rocks"
-      Bool: true
-    }
-    Overrides {
-      Name: "bp:Dust Gravity"
-      Float: 0
-    }
-  }
+  ChildIds: 13657111917133276381
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  Blueprint {
-    BlueprintAsset {
-      Id: 17144409617272687275
+  Control {
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
     }
-    TeamSettings {
+    Canvas {
     }
-    Vfx {
-      AutoPlay: true
-      TeamSettings {
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
       }
     }
   }
 }
 Objects {
-  Id: 3593048129717236030
-  Name: "Cast Burst Ring VFX"
+  Id: 13657111917133276381
+  Name: "UI Panel"
   Transform {
     Location {
-      X: -1169.5575
-      Y: -49.5453873
-      Z: 16.5805206
     }
     Rotation {
     }
@@ -101,48 +101,46 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4781671109827199097
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Emissive Boost"
-      Float: 27.3239098
-    }
-    Overrides {
-      Name: "bp:Count"
-      Int: 5
-    }
-    Overrides {
-      Name: "bp:Life Max"
-      Float: 1.83981633
-    }
-  }
+  ParentId: 11671541193908751943
+  ChildIds: 2611694767083980301
+  ChildIds: 12936121964788554524
+  ChildIds: 2470820469028814423
+  ChildIds: 3682505260361414322
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  Blueprint {
-    BlueprintAsset {
-      Id: 8964304301782432258
+  Control {
+    Width: 100
+    Height: 100
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
     }
-    TeamSettings {
+    Panel {
     }
-    Vfx {
-      AutoPlay: true
-      TeamSettings {
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
       }
     }
   }
 }
 Objects {
-  Id: 2082059296096399263
-  Name: "Generic Muzzleflash VFX"
+  Id: 3682505260361414322
+  Name: "UI Image"
   Transform {
     Location {
-      X: -1065.23376
-      Y: 324.944733
-      Z: 40.8960953
     }
     Rotation {
     }
@@ -152,49 +150,230 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4781671109827199097
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:color"
+  ParentId: 13657111917133276381
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 200
+    UIX: 350
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 8630559059051868583
+      }
       Color {
-        R: 0.996291399
+        R: 1
         G: 1
-        B: 0.72
+        B: 1
         A: 1
       }
-    }
-    Overrides {
-      Name: "bp:Emissive Boost"
-      Float: 25.9371662
-    }
-    Overrides {
-      Name: "bp:Particle Size Multiplier"
-      Float: 3
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 16322635077100878811
-    }
-    TeamSettings {
-    }
-    Vfx {
-      AutoPlay: true
       TeamSettings {
       }
     }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
   }
 }
 Objects {
-  Id: 8371484515429973568
-  Name: "Seeker Grenade"
+  Id: 2470820469028814423
+  Name: "UI Image"
   Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13657111917133276381
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 200
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 6411337641310021854
+      }
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 12936121964788554524
+  Name: "UI Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13657111917133276381
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 2300
+    Height: 550
+    UIX: 1200
+    UIY: 50
+    RotationAngle: 180
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 7919790320032995329
+      }
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 2611694767083980301
+  Name: "UI Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13657111917133276381
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 2300
+    Height: 550
+    UIX: -1100
+    UIY: 50
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 7919790320032995329
+      }
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 6214522209726083892
+  Name: "Cartoon Funny Wolf Whistle 04 SFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
     Scale {
       X: 1
       Y: 1
@@ -202,45 +381,32 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 18045273018505054026
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Seeker Grenade"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -736.280518
-            Y: -368.720215
-            Z: 2.28881836e-05
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
+  AudioInstance {
+    AudioAsset {
+      Id: 1892290021590902712
     }
-    TemplateAsset {
-      Id: 7065256297422282266
-    }
+    Volume: 1
+    Falloff: -1
+    Radius: -1
+    EnableOcclusion: true
+    IsSpatializationEnabled: true
+    IsAttenuationEnabled: true
   }
 }
 Objects {
-  Id: 9119551732591600018
-  Name: "Decoy Equipment"
+  Id: 4790773025567449935
+  Name: "Flash - Impact Snow Heavy 02 SFX"
   Transform {
+    Location {
+    }
+    Rotation {
+    }
     Scale {
       X: 1
       Y: 1
@@ -248,42 +414,133 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
-  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 2834823289855701162
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Prop Equipment"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
+  AudioInstance {
+    AudioAsset {
+      Id: 16176632190761247209
     }
-    TemplateAsset {
-      Id: 12761170585670578928
-    }
+    Volume: 1
+    Falloff: -1
+    Radius: -1
+    EnableOcclusion: true
+    IsSpatializationEnabled: true
+    IsAttenuationEnabled: true
   }
 }
 Objects {
-  Id: 11738069464369191981
+  Id: 16433746726372659509
+  Name: "Flash - Impact Nature Tree Branch Hard 02 SFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 9022709025335105979
+    }
+    Volume: 1
+    Falloff: -1
+    Radius: -1
+    EnableOcclusion: true
+    IsSpatializationEnabled: true
+    IsAttenuationEnabled: true
+  }
+}
+Objects {
+  Id: 6556469418511347147
+  Name: "Wet Smack Thump SFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 16527010741826296897
+    }
+    Volume: 1
+    Falloff: -1
+    Radius: -1
+    EnableOcclusion: true
+    IsSpatializationEnabled: true
+    IsAttenuationEnabled: true
+  }
+}
+Objects {
+  Id: 13145697387234695006
+  Name: "Gunshot Low End Sweetener 01 SFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 16818184931356864066
+    }
+    Volume: 1
+    Falloff: -1
+    Radius: -1
+    EnableOcclusion: true
+    IsSpatializationEnabled: true
+    IsAttenuationEnabled: true
+  }
+}
+Objects {
+  Id: 10310019029877027008
   Name: "CubeDecoy"
   Transform {
+    Location {
+      X: -650
+      Y: 350
+    }
+    Rotation {
+    }
     Scale {
       X: 1
       Y: 1
@@ -309,9 +566,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -1065.23376
-            Y: 127.289368
-            Z: 40.8960953
+            X: -1200
+            Y: 150
           }
         }
         Overrides {
@@ -327,8 +583,108 @@ Objects {
   }
 }
 Objects {
-  Id: 9132531048473045259
-  Name: "Adv. Submachine Gun Custom"
+  Id: 1485801863796282674
+  Name: "CubeDecoy"
+  Transform {
+    Location {
+      X: -650
+      Y: 100
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 13981083459546380957
+      value {
+        Overrides {
+          Name: "Name"
+          String: "CubeDecoy"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -650
+            Y: 350
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 11595060323413906524
+    }
+  }
+}
+Objects {
+  Id: 6087285684356652445
+  Name: "Explosion Creation & Construction Kit 01 SFX"
+  Transform {
+    Location {
+      X: -250
+      Y: -100
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Enable Explosion 1 Dynamic Distant Sound"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Explosion Type 1"
+      Enum {
+        Value: "mc:esfx_explosions:15"
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 6970563607933101105
+    }
+    AudioBP {
+      Volume: 1
+      Falloff: 3600
+      Radius: 400
+      EnableOcclusion: true
+      IsSpatializationEnabled: true
+      IsAttenuationEnabled: true
+    }
+  }
+}
+Objects {
+  Id: 6452588685780568420
+  Name: "Flash VFX"
   Transform {
     Scale {
       X: 1
@@ -346,17 +702,17 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 16827809946091253559
+      key: 9026985005240855584
       value {
         Overrides {
           Name: "Name"
-          String: "Adv. Submachine Gun Custom"
+          String: "Flash VFX"
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: -300
-            Y: -850
+            X: -650
+            Y: 100
           }
         }
         Overrides {
@@ -367,7 +723,7 @@ Objects {
       }
     }
     TemplateAsset {
-      Id: 11674268999975462904
+      Id: 2301212823372133715
     }
   }
 }
@@ -376,9 +732,9 @@ Objects {
   Name: "mannequin_guy"
   Transform {
     Location {
-      X: -350
-      Y: -150
-      Z: 6.86645508e-05
+      X: -650
+      Y: -50
+      Z: 7.62939453e-06
     }
     Rotation {
       Yaw: 89.9999771
@@ -2862,6 +3218,139 @@ Objects {
     SubobjectId: 4374444702638014193
     InstanceId: 9546299038568894213
     TemplateId: 1870765097595317841
+  }
+}
+Objects {
+  Id: 9119551732591600018
+  Name: "Prop Equipment"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2834823289855701162
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Prop Equipment"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 12761170585670578928
+    }
+  }
+}
+Objects {
+  Id: 11738069464369191981
+  Name: "CubeDecoy"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 13981083459546380957
+      value {
+        Overrides {
+          Name: "Name"
+          String: "CubeDecoy"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -650
+            Y: 100
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 11595060323413906524
+    }
+  }
+}
+Objects {
+  Id: 9132531048473045259
+  Name: "Adv. Submachine Gun Custom"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16827809946091253559
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Adv. Submachine Gun Custom"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -300
+            Y: -850
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 11674268999975462904
+    }
   }
 }
 Objects {

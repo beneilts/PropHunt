@@ -1,9 +1,14 @@
 local PropTeamTracker = script:GetCustomProperty("PropTeamTracker"):WaitForObject()
 local RotationSpeed = script:GetCustomProperty("RotationSpeed")
 local ABGS = require(script:GetCustomProperty("API"))
+
+local FlashVFX = script:GetCustomProperty("FlashVFX")
+local deathVFX = script:GetCustomProperty("PropDeathVFX")
+
 local WeaponTemplate = script:GetCustomProperty("WeaponTemplate")
 local GrenadeTemplate = script:GetCustomProperty("GrenadeTemplate")
 local DecoyTemplate = script:GetCustomProperty("PropEquipmentTemplate")
+
 local ThirdPersonPlayerSettings = script:GetCustomProperty("ThirdPersonPlayerSettings"):WaitForObject()
 local FirstPersonPlayerSettings = script:GetCustomProperty("FirstPersonPlayerSettings"):WaitForObject()
 
@@ -119,6 +124,8 @@ function GivePlayerEquipment(player)
 				print("~~ Registering changeAbilityEvent for "..player.name)
 				--propTeam[player]["changeAbilityEvent"] = 
 				ability.executeEvent:Connect(OnChangeProp)
+			elseif ability.name=="Flash" then
+				ability.executeEvent:Connect(OnFlashExecute)
 			end
 		end
 	end
@@ -127,8 +134,8 @@ end
 -- Removes the referenced requipment if that player has it
 function RemovePlayerEquipment(player)
 	-- Check if player is a seeker
-	local PreviousSeekerTeam = PropTeamTracker:GetCustomProperty("PropTeam") -- Since we have already toggled the PropTeamTracker, we need to remove equipment from the current prop team
-	local PreviousPropTeam = 3-PreviousSeekerTeam
+	--local PreviousSeekerTeam = PropTeamTracker:GetCustomProperty("PropTeam") -- Since we have already toggled the PropTeamTracker, we need to remove equipment from the current prop team
+	--local PreviousPropTeam = 3-PreviousSeekerTeam
 	--if player.team ~= PreviousSeekerTeam then return end
 	print("\\ Removing player equipment: "..player.name)
 
@@ -144,7 +151,7 @@ function RemovePlayerEquipment(player)
 		end
 	end
 	
-	if player.team == PreviousPropTeam and propTeam[player]then
+	--if player.team == PreviousPropTeam and propTeam[player]then
 	
 		-- Disconnect ability events
 		--propTeam[player]["changeAbilityEvent"]:Disconnect()
@@ -153,7 +160,7 @@ function RemovePlayerEquipment(player)
 		--propTeam[player]["decoyAbilityEvent"]:Disconnect()
 		--propTeam[player]["decoyAbilityEvent"]=nil
 				
-	end
+	--end
 	--[[
 	if seekerTeam[player]then
 		-- remove grenade
@@ -249,15 +256,19 @@ function RemovePlayerProp(player)
 		-- Detach prop
 		propTeam[player]["prop"]:Detach()
 		
+		-- Spawn death vfx
+		local playerScale = player:GetWorldScale()
+		local playerPosition = player:GetWorldPosition()
+		-- Need the vfx to spawn at the players feet
+		local vfxPosition = Vector3.New(playerPosition.x, playerPosition.y, playerPosition.z-(100*playerScale.x))
+		World.SpawnAsset(deathVFX, {position = vfxPosition, scale = playerScale})
+		
 		-- Destroy prop
 		if propTeam[player]["prop"]:IsValid() then
 			propTeam[player]["prop"]:Destroy()
 		end
 		
-		-- Spawn death vfx
-		local deathVFX = script:GetCustomProperty("PropDeathVFX")
-		World.SpawnAsset(deathVFX, {position = player:GetWorldPosition()})
-		
+				
 		-- Remove entries from table
 		propTeam[player] = nil
 		--propTeam[player]["prop"] = nil
@@ -417,6 +428,22 @@ function OnChangeProp(ability)
 		print("|| ChangingProp = "..tostring( propTeam[ability.owner]["changingProp"]).." | Player: "..ability.owner.name)	
 		print("Q: "..propTeam[ability.owner]["Q"].."  E: "..propTeam[ability.owner]["E"])
 	end
+end
+
+function OnFlashExecute(ability)
+	local FlashLeft = ability:GetCustomProperty("FlashLeft")
+	if FlashLeft <= 0 then return end
+	
+	-- Spawn flash vfx
+	local playerScale = ability.owner:GetWorldScale()
+	local playerPosition = ability.owner:GetWorldPosition()
+	-- Need the vfx to spawn at the player's feet
+	local vfxPosition = Vector3.New(playerPosition.x, playerPosition.y, playerPosition.z-(100*playerScale.x))
+	local vfxScale = Vector3.ONE
+	if playerScale.x > 1 then
+		vfxScale = playerScale
+	end
+	World.SpawnAsset(FlashVFX, {position = vfxPosition, scale = vfxScale})
 end
 
 function RotateProp(_player) -- left or right

@@ -17,6 +17,7 @@ Assets {
         }
         ParentId: 4781671109827199097
         ChildIds: 16724604779473966697
+        ChildIds: 17717089113987007127
         ChildIds: 3490102985429220541
         ChildIds: 9737251349055155193
         ChildIds: 3277212879331775672
@@ -272,6 +273,36 @@ Assets {
         }
       }
       Objects {
+        Id: 17717089113987007127
+        Name: "WeaponDamageShootServer"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 16827809946091253559
+        UnregisteredParameters {
+        }
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 12210489528647249200
+          }
+        }
+      }
+      Objects {
         Id: 3490102985429220541
         Name: "Server Context"
         Transform {
@@ -286,7 +317,6 @@ Assets {
           }
         }
         ParentId: 16827809946091253559
-        ChildIds: 17717089113987007127
         ChildIds: 1348066846868618168
         UnregisteredParameters {
         }
@@ -299,35 +329,6 @@ Assets {
         }
         NetworkContext {
           Type: Server
-        }
-      }
-      Objects {
-        Id: 17717089113987007127
-        Name: "WeaponDamageShootServer"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1.00000012
-            Y: 1.00000012
-            Z: 1
-          }
-        }
-        ParentId: 3490102985429220541
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 12210489528647249200
-          }
         }
       }
       Objects {

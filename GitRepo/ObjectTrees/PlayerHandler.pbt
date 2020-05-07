@@ -242,7 +242,6 @@ Objects {
       MountedJumpMaxCount: 1
       MountedJumpVelocity: 900
       IsSlideEnabled: true
-      IsCrouchEnabled: true
       IsJumpEnabled: true
       CanMoveForward: true
       CanMoveBackward: true
@@ -386,15 +385,27 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:API"
+      AssetReference {
+        Id: 11974742996071064388
+      }
+    }
+    Overrides {
       Name: "cs:PropDeathVFX"
       AssetReference {
         Id: 1506301682382058805
       }
     }
     Overrides {
-      Name: "cs:API"
+      Name: "cs:DeathSFX"
       AssetReference {
-        Id: 11974742996071064388
+        Id: 8590696993162977171
+      }
+    }
+    Overrides {
+      Name: "cs:FlashVFX"
+      AssetReference {
+        Id: 2301212823372133715
       }
     }
     Overrides {

@@ -602,7 +602,7 @@ Objects {
     }
     Overrides {
       Name: "cs:MatchDuration"
-      Float: 20
+      Float: 30
     }
     Overrides {
       Name: "cs:MatchEndHasDuration"

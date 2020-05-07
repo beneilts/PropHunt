@@ -69,5 +69,29 @@ function DisplayDamage(damage, targetPlayer, sourcePlayer)
     end
 end
 
+function OnDecoyDamaged(damage, target, sourcePlayer)
+	if sourcePlayer == LOCAL_PLAYER then
+		local targetObject = target:GetObject()
+        if SHOW_FLY_UP_TEXT then
+            -- Show fly up damage text on target player
+            UI.ShowFlyUpText(string.format("%.0f", damage), targetObject:GetWorldPosition(),
+                {duration = DAMAGE_TEXT_DURATION,
+                color = DAMAGE_TEXT_COLOR,
+                isBig = IS_BIG_TEXT})
+        end
+
+        -- Play the damage feedback sound to the source player
+        if HIT_FEEDBACK_SOUND then
+            HIT_FEEDBACK_SOUND:Play()
+        end
+
+        -- Show the hit indicator feedback for this damage
+        if SHOW_HIT_FEEDBACK then
+            TriggerHitIndicator()
+        end
+	end
+end
+
 -- Initialize
 Events.Connect("PlayerDamage_Internal", DisplayDamage)
+Events.Connect("DecoyDamage_Internal", OnDecoyDamaged)
