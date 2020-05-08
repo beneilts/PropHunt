@@ -320,76 +320,6 @@ Objects {
   }
 }
 Objects {
-  Id: 8254326286888028354
-  Name: "Prop Team Tracker"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 489108178969232985
-  ChildIds: 10560063672146458174
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 10560063672146458174
-  Name: "PropTeamTracker"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 8254326286888028354
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:PropTeam"
-      Int: 1
-    }
-    Overrides {
-      Name: "cs:API"
-      AssetReference {
-        Id: 11974742996071064388
-      }
-    }
-    Overrides {
-      Name: "cs:PropTeam:isrep"
-      Bool: true
-    }
-  }
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 11920584674437180603
-    }
-  }
-}
-Objects {
   Id: 11547807412695793972
   Name: "Match Win Condition"
   Transform {
@@ -594,7 +524,7 @@ Objects {
     }
     Overrides {
       Name: "cs:HideDuration"
-      Float: 5
+      Float: 10
     }
     Overrides {
       Name: "cs:MatchHasDuration"
@@ -602,7 +532,7 @@ Objects {
     }
     Overrides {
       Name: "cs:MatchDuration"
-      Float: 30
+      Float: 240
     }
     Overrides {
       Name: "cs:MatchEndHasDuration"
@@ -610,7 +540,7 @@ Objects {
     }
     Overrides {
       Name: "cs:MatchEndDuration"
-      Float: 10
+      Float: 15
     }
     Overrides {
       Name: "cs:ScoreboardHasDuration"

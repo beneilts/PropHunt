@@ -246,7 +246,7 @@ Assets {
         UnregisteredParameters {
           Overrides {
             Name: "cs:FlashLeft"
-            Int: 10
+            Int: 1
           }
           Overrides {
             Name: "cs:FlashLeft:isrep"

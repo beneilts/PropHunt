@@ -17,19 +17,9 @@ Objects {
   ChildIds: 7886524035459811226
   ChildIds: 16679247193346507455
   ChildIds: 16171268457374514667
-  ChildIds: 3217845073768469753
-  ChildIds: 9132531048473045259
-  ChildIds: 11738069464369191981
   ChildIds: 9119551732591600018
   ChildIds: 1073954693829522873
-  ChildIds: 6452588685780568420
-  ChildIds: 6087285684356652445
-  ChildIds: 1485801863796282674
-  ChildIds: 10310019029877027008
-  ChildIds: 13145697387234695006
-  ChildIds: 6556469418511347147
-  ChildIds: 16433746726372659509
-  ChildIds: 6214522209726083892
+  ChildIds: 4680180722781648553
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -42,330 +32,49 @@ Objects {
   }
 }
 Objects {
-  Id: 6214522209726083892
-  Name: "Cartoon Funny Wolf Whistle 04 SFX"
+  Id: 4680180722781648553
+  Name: "Lava test"
   Transform {
     Location {
+      X: -500
+      Y: 700
+      Z: 50
     }
     Rotation {
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  AudioInstance {
-    AudioAsset {
-      Id: 1892290021590902712
-    }
-    Volume: 1
-    Falloff: -1
-    Radius: -1
-    EnableOcclusion: true
-    IsSpatializationEnabled: true
-    IsAttenuationEnabled: true
-  }
-}
-Objects {
-  Id: 16433746726372659509
-  Name: "Flash - Impact Nature Tree Branch Hard 02 SFX"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  AudioInstance {
-    AudioAsset {
-      Id: 9022709025335105979
-    }
-    Volume: 1
-    Falloff: -1
-    Radius: -1
-    EnableOcclusion: true
-    IsSpatializationEnabled: true
-    IsAttenuationEnabled: true
-  }
-}
-Objects {
-  Id: 6556469418511347147
-  Name: "Wet Smack Thump SFX"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  AudioInstance {
-    AudioAsset {
-      Id: 16527010741826296897
-    }
-    Volume: 1
-    Falloff: -1
-    Radius: -1
-    EnableOcclusion: true
-    IsSpatializationEnabled: true
-    IsAttenuationEnabled: true
-  }
-}
-Objects {
-  Id: 13145697387234695006
-  Name: "Gunshot Low End Sweetener 01 SFX"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  AudioInstance {
-    AudioAsset {
-      Id: 16818184931356864066
-    }
-    Volume: 1
-    Falloff: -1
-    Radius: -1
-    EnableOcclusion: true
-    IsSpatializationEnabled: true
-    IsAttenuationEnabled: true
-  }
-}
-Objects {
-  Id: 10310019029877027008
-  Name: "CubeDecoy"
-  Transform {
-    Location {
-      X: -650
-      Y: 350
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 13981083459546380957
-      value {
-        Overrides {
-          Name: "Name"
-          String: "CubeDecoy"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -1200
-            Y: 150
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 11595060323413906524
-    }
-  }
-}
-Objects {
-  Id: 1485801863796282674
-  Name: "CubeDecoy"
-  Transform {
-    Location {
-      X: -650
-      Y: 100
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 13981083459546380957
-      value {
-        Overrides {
-          Name: "Name"
-          String: "CubeDecoy"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -650
-            Y: 350
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 11595060323413906524
-    }
-  }
-}
-Objects {
-  Id: 6087285684356652445
-  Name: "Explosion Creation & Construction Kit 01 SFX"
-  Transform {
-    Location {
-      X: -250
-      Y: -100
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 8.5
+      Y: 3
+      Z: 0.5
     }
   }
   ParentId: 4781671109827199097
   UnregisteredParameters {
     Overrides {
-      Name: "bp:Enable Explosion 1 Dynamic Distant Sound"
-      Bool: false
-    }
-    Overrides {
-      Name: "bp:Explosion Type 1"
-      Enum {
-        Value: "mc:esfx_explosions:15"
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17741982598958595501
       }
     }
   }
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
-  Blueprint {
-    BlueprintAsset {
-      Id: 6970563607933101105
+  CoreMesh {
+    MeshAsset {
+      Id: 15270526392911169618
     }
-    AudioBP {
-      Volume: 1
-      Falloff: 3600
-      Radius: 400
-      EnableOcclusion: true
-      IsSpatializationEnabled: true
-      IsAttenuationEnabled: true
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
     }
-  }
-}
-Objects {
-  Id: 6452588685780568420
-  Name: "Flash VFX"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 9026985005240855584
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Flash VFX"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -650
-            Y: 100
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
       }
-    }
-    TemplateAsset {
-      Id: 2301212823372133715
     }
   }
 }
@@ -2900,135 +2609,9 @@ Objects {
         }
       }
     }
-    ParameterOverrideMap {
-      key: 3454975879395749077
-      value {
-        Overrides {
-          Name: "cs:FlashLeft"
-          Int: 10
-        }
-      }
-    }
     TemplateAsset {
       Id: 12761170585670578928
     }
-  }
-}
-Objects {
-  Id: 11738069464369191981
-  Name: "CubeDecoy"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 13981083459546380957
-      value {
-        Overrides {
-          Name: "Name"
-          String: "CubeDecoy"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -650
-            Y: 100
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 11595060323413906524
-    }
-  }
-}
-Objects {
-  Id: 9132531048473045259
-  Name: "Adv. Submachine Gun Custom"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 16827809946091253559
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Adv. Submachine Gun Custom"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -300
-            Y: -850
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 11674268999975462904
-    }
-  }
-}
-Objects {
-  Id: 3217845073768469753
-  Name: "Props List"
-  Transform {
-    Location {
-      X: 50
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Props List"
   }
 }
 Objects {
