@@ -17,15 +17,6 @@ Assets {
   }
 }
 Assets {
-  Id: 16176632190761247209
-  Name: "Impact Snow Heavy 02 SFX"
-  PlatformAssetType: 7
-  PrimaryAsset {
-    AssetType: "AudioAssetRef"
-    AssetId: "sfx_impact_snow_heavy_02_Cue_ref"
-  }
-}
-Assets {
   Id: 15745211306479370650
   Name: "Marble Basic 01"
   PlatformAssetType: 2
@@ -44,39 +35,12 @@ Assets {
   }
 }
 Assets {
-  Id: 8630559059051868583
-  Name: "Icon Ice"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "Icon_Ice"
-  }
-}
-Assets {
-  Id: 7919790320032995329
-  Name: "BG Highlighted 001"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "BackgroundHighlighted_020"
-  }
-}
-Assets {
   Id: 6970563607933101105
   Name: "Explosion Creation & Construction Kit 01 SFX"
   PlatformAssetType: 10
   PrimaryAsset {
     AssetType: "AudioBlueprintAssetRef"
     AssetId: "sfxabp_explosion_construction_kit_ref"
-  }
-}
-Assets {
-  Id: 6411337641310021854
-  Name: "Icon Wind"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "Icon_Wind"
   }
 }
 Assets {

@@ -16,6 +16,7 @@ Assets {
           }
         }
         ParentId: 4781671109827199097
+        ChildIds: 12960224806052335735
         ChildIds: 3194848169343277408
         ChildIds: 16081974109424400532
         Lifespan: 1
@@ -27,6 +28,39 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         NetworkContext {
+        }
+      }
+      Objects {
+        Id: 12960224806052335735
+        Name: "Flash - Impact Snow Heavy 02 SFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 9026985005240855584
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        AudioInstance {
+          AudioAsset {
+            Id: 16176632190761247209
+          }
+          AutoPlay: true
+          Volume: 2
+          Falloff: -1
+          Radius: -1
+          EnableOcclusion: true
+          IsAttenuationEnabled: true
         }
       }
       Objects {
@@ -142,6 +176,15 @@ Assets {
             }
           }
         }
+      }
+    }
+    Assets {
+      Id: 16176632190761247209
+      Name: "Impact Snow Heavy 02 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_impact_snow_heavy_02_Cue_ref"
       }
     }
     Assets {

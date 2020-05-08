@@ -248,6 +248,10 @@ Assets {
             Name: "cs:FlashLeft"
             Int: 10
           }
+          Overrides {
+            Name: "cs:FlashLeft:isrep"
+            Bool: true
+          }
         }
         WantsNetworking: true
         Collidable_v2 {

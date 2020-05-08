@@ -422,6 +422,16 @@ function OnChangeProp(ability)
 		
 		ability:SetNetworkedCustomProperty("ChangesLeft", ChangesLeft-1)
 		
+		-- Reset Decoy and Flash abilities
+		local playerAbilities = ability.owner:GetAbilities()
+		for _, _ability in pairs(playerAbilities) do
+			if _ability.name=="Copy" then
+				_ability:SetNetworkedCustomProperty("DecoysLeft", 3)
+			elseif _ability.name=="Flash" then
+				_ability:SetNetworkedCustomProperty("FlashLeft", 1)
+			end
+		end
+		
 		propTeam[ability.owner]["changingProp"] = false
 		propTeam[ability.owner]["Q"] = 0
 		propTeam[ability.owner]["E"] = 0
@@ -433,7 +443,7 @@ end
 function OnFlashExecute(ability)
 	local FlashLeft = ability:GetCustomProperty("FlashLeft")
 	if FlashLeft <= 0 then return end
-	
+		
 	-- Spawn flash vfx
 	local playerScale = ability.owner:GetWorldScale()
 	local playerPosition = ability.owner:GetWorldPosition()
@@ -444,6 +454,15 @@ function OnFlashExecute(ability)
 		vfxScale = playerScale
 	end
 	World.SpawnAsset(FlashVFX, {position = vfxPosition, scale = vfxScale})
+	
+	-- Get enemy players that are within the radius
+	local FlashedPlayers = Game.FindPlayersInSphere(ability.owner:GetWorldPosition(), 280, {includeTeams = (3-ability.owner.team)})
+	CoreDebug.DrawSphere(ability.owner:GetWorldPosition(), 280, {duration=10})
+	for _, player in pairs(FlashedPlayers) do
+		Events.BroadcastToPlayer(player, "PlayerFlashed_Internal")
+	end
+	
+	ability:SetNetworkedCustomProperty("FlashLeft",FlashLeft-1)
 end
 
 function RotateProp(_player) -- left or right
