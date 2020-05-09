@@ -28,6 +28,7 @@ Assets {
         Control {
           Width: 500
           Height: 44
+          UIX: 10
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -41,21 +42,21 @@ Assets {
               B: 1
               A: 1
             }
-            Size: 20
+            Size: 18
             Justification {
-              Value: "mc:etextjustify:right"
+              Value: "mc:etextjustify:left"
             }
             ClipTextToSize: true
           }
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:topright"
+                Value: "mc:euianchor:topleft"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:topright"
+                Value: "mc:euianchor:topleft"
               }
             }
           }

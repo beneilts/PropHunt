@@ -19,6 +19,8 @@ Objects {
   ChildIds: 16171268457374514667
   ChildIds: 1073954693829522873
   ChildIds: 15746190553233032076
+  ChildIds: 10619772409657403169
+  ChildIds: 18134845360004658507
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -28,6 +30,80 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 18134845360004658507
+  Name: "Helper_KillFeedLine"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 11340123600846676812
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Helper_KillFeedLine"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 200
+            Y: 260
+            Z: 210
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -6.83018879e-06
+            Yaw: 89.9999924
+            Roll: 89.9999924
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1235385159574739258
+    }
+  }
+}
+Objects {
+  Id: 10619772409657403169
+  Name: "Ability UI"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Ability UI"
   }
 }
 Objects {

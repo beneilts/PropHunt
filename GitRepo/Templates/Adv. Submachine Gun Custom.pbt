@@ -205,7 +205,7 @@ Assets {
             BeamAssetRef {
               Id: 841534158063459245
             }
-            BurstCount: 30
+            BurstCount: 15
             BurstDuration: 8.5
             BurstStopsWithRelease: true
             AttackCooldown: 0.25
@@ -216,7 +216,7 @@ Assets {
             ReticleType {
               Value: "mc:ereticletype:crosshair"
             }
-            MaxAmmo: 30
+            MaxAmmo: 15
             AmmoType: "rounds"
             MultiShot: 1
             ProjectileSpeed: 25000
