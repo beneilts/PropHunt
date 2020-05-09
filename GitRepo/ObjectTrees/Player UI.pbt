@@ -17,6 +17,7 @@ Objects {
   ParentId: 9598348754977261683
   ChildIds: 8421411333628583357
   ChildIds: 11671541193908751943
+  ChildIds: 18276254599877427649
   UnregisteredParameters {
     Overrides {
       Name: "cs:FlashDelay"
@@ -45,6 +46,98 @@ Objects {
   }
 }
 Objects {
+  Id: 18276254599877427649
+  Name: "Speed Lines Post Process"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9711224639352985627
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Unbounded"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Brightness"
+      Float: 25
+    }
+    Overrides {
+      Name: "bp:Radius"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Contrast"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Solid Edge"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Speed"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Streak Appearance"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Effect Strength"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Blend Weight"
+      Float: 0.107007697
+    }
+    Overrides {
+      Name: "bp:Tint A"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Tint B"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Tint C"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 8830529340787957779
+    }
+  }
+}
+Objects {
   Id: 11671541193908751943
   Name: "Flash Blur Canvas"
   Transform {
@@ -64,7 +157,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceon"
   }
   Control {
     RenderTransformPivot {
@@ -1011,6 +1104,10 @@ Objects {
         }
         Overrides {
           Name: "cs:DisplayBigText"
+          Bool: false
+        }
+        Overrides {
+          Name: "cs:ShowFlyUpText"
           Bool: false
         }
       }

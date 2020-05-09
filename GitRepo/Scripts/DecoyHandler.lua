@@ -40,15 +40,15 @@ function ApplyDamage(amount)
 		local deathSoundObject = World.SpawnAsset(DeathSFX, {position = script:GetWorldPosition()})
 		local soundTable = {}
 		for i=1, 3 do 
-			print("Adding Sound"..i.." to the table")
+			--print("Adding Sound"..i.." to the table")
 			soundTable[i]=deathSoundObject:GetCustomProperty("Sound"..i)
 		end
 		
-		print("Table size: "..#soundTable)
+		--print("Table size: "..#soundTable)
 		
 		local randomValue = math.random(1,#soundTable) -- get a random number from 1 to the size of the table
 		local deathSoundReference = soundTable[randomValue]
-		print("Reference = "..deathSoundReference)
+		--print("Reference = "..deathSoundReference)
 		local deathSound = World.SpawnAsset(deathSoundReference, {position = script:GetWorldPosition()})
 		
 		--if deathSound:IsA("Audio") then

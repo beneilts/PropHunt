@@ -17,9 +17,8 @@ Objects {
   ChildIds: 7886524035459811226
   ChildIds: 16679247193346507455
   ChildIds: 16171268457374514667
-  ChildIds: 9119551732591600018
   ChildIds: 1073954693829522873
-  ChildIds: 4680180722781648553
+  ChildIds: 15746190553233032076
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -32,49 +31,45 @@ Objects {
   }
 }
 Objects {
-  Id: 4680180722781648553
-  Name: "Lava test"
+  Id: 15746190553233032076
+  Name: "Prop Equipment"
   Transform {
-    Location {
-      X: -500
-      Y: 700
-      Z: 50
-    }
-    Rotation {
-    }
     Scale {
-      X: 8.5
-      Y: 3
-      Z: 0.5
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 4781671109827199097
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 17741982598958595501
-      }
-    }
-  }
+  WantsNetworking: true
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  CoreMesh {
-    MeshAsset {
-      Id: 15270526392911169618
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2834823289855701162
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Prop Equipment"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
       }
+    }
+    TemplateAsset {
+      Id: 12761170585670578928
     }
   }
 }
@@ -2569,49 +2564,6 @@ Objects {
     SubobjectId: 4374444702638014193
     InstanceId: 9546299038568894213
     TemplateId: 1870765097595317841
-  }
-}
-Objects {
-  Id: 9119551732591600018
-  Name: "Prop Equipment"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 2834823289855701162
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Prop Equipment"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 12761170585670578928
-    }
   }
 }
 Objects {

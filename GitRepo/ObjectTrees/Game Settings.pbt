@@ -27,6 +27,32 @@ Objects {
   }
 }
 Objects {
+  Id: 6401832079559612341
+  Name: "Spectating System"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7886524035459811226
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Spectating System"
+  }
+}
+Objects {
   Id: 3217845073768469753
   Name: "Props List"
   Transform {

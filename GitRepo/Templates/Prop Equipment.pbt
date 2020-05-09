@@ -19,7 +19,9 @@ Assets {
         ChildIds: 10023973277798017994
         ChildIds: 3059277165760047236
         ChildIds: 11608426661166636538
-        ChildIds: 3454975879395749077
+        ChildIds: 3611658982198431821
+        UnregisteredParameters {
+        }
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -229,7 +231,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3454975879395749077
+        Id: 3611658982198431821
         Name: "Flash"
         Transform {
           Location {
@@ -273,7 +275,6 @@ Assets {
             }
           }
           ExecutePhaseSettings {
-            Duration: 0.1
             CanMove: true
             CanJump: true
             CanRotate: true
@@ -294,6 +295,7 @@ Assets {
             }
           }
           CooldownPhaseSettings {
+            Duration: 2
             CanMove: true
             CanJump: true
             CanRotate: true

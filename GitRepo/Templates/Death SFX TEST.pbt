@@ -1,13 +1,13 @@
 Assets {
   Id: 16295239520551637413
-  Name: "Decoy Death SFX"
+  Name: "Death SFX TEST"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 2091587272485393587
       Objects {
         Id: 2091587272485393587
-        Name: "Decoy Death SFX"
+        Name: "Death SFX TEST"
         Transform {
           Scale {
             X: 1
@@ -36,7 +36,7 @@ Assets {
             }
           }
         }
-        Lifespan: 2
+        Lifespan: 10
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"

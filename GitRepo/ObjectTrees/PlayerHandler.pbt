@@ -385,6 +385,12 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:DeadPlayersArea"
+      ObjectReference {
+        SelfId: 9002451621866000180
+      }
+    }
+    Overrides {
       Name: "cs:API"
       AssetReference {
         Id: 11974742996071064388

@@ -1,6 +1,8 @@
 local PropTeamTracker = script:GetCustomProperty("PropTeamTracker"):WaitForObject()
 local RotationSpeed = script:GetCustomProperty("RotationSpeed")
 local ABGS = require(script:GetCustomProperty("API"))
+local DeadPlayersArea = script:GetCustomProperty("DeadPlayersArea"):WaitForObject()
+
 
 local FlashVFX = script:GetCustomProperty("FlashVFX")
 local deathVFX = script:GetCustomProperty("PropDeathVFX")
@@ -44,6 +46,16 @@ function OnPlayerJoin(player)
 	-- Setup up player event connections
 	player.diedEvent:Connect(OnPlayerDied)
 	player.respawnedEvent:Connect(OnPlayerRespawn)
+	
+	local CurrentGameState = ABGS.GetGameState()
+	-- Respawn is happening in the Round, Scoreboard and Lobby states
+	-- If a player joins and the game is not in the Lobby state then 
+	-- kill them and make them spectate until the next respawn
+	if CurrentGameState ~= ABGS.GAME_STATE_LOBBY then
+		Task.Wait()
+		player:Die()
+		Task.Wait()
+	end
 end
 
 function OnPlayerRespawn(player)
@@ -64,14 +76,21 @@ function OnPlayerRespawn(player)
 		GivePlayerProp(player)
 		GivePlayerEquipment(player)
 	end
-	
 	player.movementControlMode = MovementControlMode.NONE -- disable player input so they can't move
 	end
 
 function OnPlayerDied(player)
 	print(player.name.." has died!")
-
+	player.movementControlMode = MovementControlMode.NONE -- disable movement
+	player.maxJumpCount = 0 -- disable jumping
+	RemovePlayerEquipment(player)
 	RemovePlayerProp(player)	
+	Task.Wait()
+	-- Let the client know the player died
+	Events.BroadcastToPlayer(player, "PlayerDied_Internal")
+	-- move dead player off the map so other players don't collide with them
+	local newPosition = DeadPlayersArea:GetWorldPosition()
+	player:SetWorldPosition(newPosition)
 end
 
 function OnPlayerLeft(player)
@@ -125,6 +144,7 @@ function GivePlayerEquipment(player)
 				--propTeam[player]["changeAbilityEvent"] = 
 				ability.executeEvent:Connect(OnChangeProp)
 			elseif ability.name=="Flash" then
+				print("~~ Registering flashAbilityEvent for "..player.name)
 				ability.executeEvent:Connect(OnFlashExecute)
 			end
 		end
@@ -205,7 +225,7 @@ function GivePlayerProp(player)
 	local showAttachments = false
 	
 	player:SetVisibility(showPlayer, showAttachments) -- Hide player visuals
-	player.isCrouchEnabled = true
+	player.isCrouchEnabled = false
 	ThirdPersonPlayerSettings:ApplyToPlayer(player)
 	
 	-- GET A RANDOM PROP
@@ -291,7 +311,7 @@ function OnStateChanged (oldState, newState)
 		-- Respawn all players
 		local numPlayers = #Game.GetPlayers()
 		print("%% Respawning "..numPlayers.." players")
-		local perPlayerDelay = 2 / numPlayers
+		local perPlayerDelay = 1 --2 / numPlayers
 		for _, player in pairs(Game.GetPlayers()) do
 			player:Respawn() -- OnRespawn event will handle equipment and attachments
 			player.movementControlMode = MovementControlMode.NONE -- disable player input so they can't move
@@ -443,7 +463,7 @@ end
 function OnFlashExecute(ability)
 	local FlashLeft = ability:GetCustomProperty("FlashLeft")
 	if FlashLeft <= 0 then return end
-		
+	print(ability.owner.name.."is using Flash")	
 	-- Spawn flash vfx
 	local playerScale = ability.owner:GetWorldScale()
 	local playerPosition = ability.owner:GetWorldPosition()
@@ -545,14 +565,17 @@ function ChangePlayerAbilities(team, mode)
 		players = Game.GetPlayers({includeTeams = team})
 	end
 	
+	print("==============================")
 	for _, player in pairs(players) do
 		local abilities = player:GetAbilities()
 		
 		for _, ability in pairs(abilities) do
+			print(player.name..": setting "..ability.name.." to "..tostring(mode))
 			ability.isEnabled = mode
 		end
+		print("\n")
 	end
-	
+	print("==============================")
 end
 
 Game.playerJoinedEvent:Connect(OnPlayerJoin)

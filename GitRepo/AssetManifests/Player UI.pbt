@@ -1,4 +1,13 @@
 Assets {
+  Id: 8830529340787957779
+  Name: "Speed Lines Post Process"
+  PlatformAssetType: 20
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "fxbp_ppm_speed_lines"
+  }
+}
+Assets {
   Id: 7919790320032995329
   Name: "BG Highlighted 001"
   PlatformAssetType: 9
