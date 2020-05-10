@@ -1,6 +1,58 @@
 Name: "Player UI"
 RootId: 9598348754977261683
 Objects {
+  Id: 17265981028320958925
+  Name: "Props Alive UI"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9598348754977261683
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Props Alive UI"
+  }
+}
+Objects {
+  Id: 10619772409657403169
+  Name: "Ability UI"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9598348754977261683
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Ability UI"
+  }
+}
+Objects {
   Id: 9711224639352985627
   Name: "FlashBlurEffect"
   Transform {
@@ -799,85 +851,6 @@ Objects {
   }
 }
 Objects {
-  Id: 3906525646320728581
-  Name: "Player Count Display"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9598348754977261683
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 4038066346690083071
-      value {
-        Overrides {
-          Name: "Anchor"
-          Enum {
-            Value: "mc:euianchor:topleft"
-          }
-        }
-        Overrides {
-          Name: "Dock"
-          Enum {
-            Value: "mc:euianchor:topleft"
-          }
-        }
-        Overrides {
-          Name: "UIX"
-          Float: 50
-        }
-        Overrides {
-          Name: "UIY"
-          Float: 100
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 10799293802348467178
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Player Count Display"
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        Overrides {
-          Name: "cs:ShowTotalPlayers"
-          Bool: true
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 12942277604844330786
-    }
-  }
-}
-Objects {
   Id: 4565965085176144912
   Name: "Team Score Display"
   Transform {
@@ -895,6 +868,15 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 5886080550476808348
+      value {
+        Overrides {
+          Name: "Label"
+          String: "Team"
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 11402471897277569130
       value {
@@ -994,9 +976,9 @@ Objects {
         Overrides {
           Name: "cs:FriendlyNameColor"
           Color {
-            G: 0.076291129
-            B: 0.812000036
-            A: 0.969000041
+            G: 0.0255894139
+            B: 0.552000046
+            A: 0.8
           }
         }
       }
@@ -1283,6 +1265,27 @@ Objects {
           Enum {
             Value: "mc:evisibilitysetting:forceoff"
           }
+        }
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 12985031663761868101
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 1
+            A: 0.5
+          }
+        }
+        Overrides {
+          Name: "Width"
+          Int: 50
+        }
+        Overrides {
+          Name: "Height"
+          Int: 50
         }
       }
     }

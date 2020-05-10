@@ -1,4 +1,13 @@
 Assets {
+  Id: 12985031663761868101
+  Name: "Center Arrow 007"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "CenterArrow_007"
+  }
+}
+Assets {
   Id: 8830529340787957779
   Name: "Speed Lines Post Process"
   PlatformAssetType: 20
