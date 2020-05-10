@@ -16,6 +16,7 @@ Assets {
           }
         }
         ParentId: 4781671109827199097
+        ChildIds: 17761604190345585936
         ChildIds: 5188606681897742199
         ChildIds: 10188877097158049067
         ChildIds: 16635945838114313473
@@ -66,6 +67,14 @@ Assets {
             AssetReference {
               Id: 8688477279662119454
             }
+          }
+          Overrides {
+            Name: "cs:Resources"
+            String: "Grenades"
+          }
+          Overrides {
+            Name: "cs:Grenades"
+            Int: 2
           }
           Overrides {
             Name: "cs:EnableAutoReload:tooltip"
@@ -163,6 +172,34 @@ Assets {
             WeaponTrajectoryMode {
               Value: "mc:eweapontrajectorymode:muzzletolooktarget"
             }
+          }
+        }
+      }
+      Objects {
+        Id: 17761604190345585936
+        Name: "AddResources"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 18045273018505054026
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 3644364678235805442
           }
         }
       }

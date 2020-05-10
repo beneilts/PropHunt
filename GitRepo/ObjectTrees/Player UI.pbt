@@ -1089,6 +1089,15 @@ Objects {
           Name: "UIY"
           Float: 10
         }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 0.8
+          }
+        }
       }
     }
     ParameterOverrideMap {
@@ -1217,6 +1226,15 @@ Objects {
           Name: "Justification"
           Enum {
             Value: "mc:etextjustify:right"
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 0.8
           }
         }
       }

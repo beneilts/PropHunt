@@ -16,11 +16,27 @@ Assets {
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 10023973277798017994
+        ChildIds: 5680468702440544973
         ChildIds: 3059277165760047236
         ChildIds: 11608426661166636538
         ChildIds: 3611658982198431821
         UnregisteredParameters {
+          Overrides {
+            Name: "cs:Resources"
+            String: "Decoys,Changes,Flashes"
+          }
+          Overrides {
+            Name: "cs:Decoys"
+            Int: 3
+          }
+          Overrides {
+            Name: "cs:Changes"
+            Int: 2
+          }
+          Overrides {
+            Name: "cs:Flashes"
+            Int: 1
+          }
         }
         WantsNetworking: true
         Collidable_v2 {
@@ -32,13 +48,13 @@ Assets {
         Equipment {
           SocketName: "head"
           PickupTrigger {
-            SubObjectId: 10023973277798017994
+            SelfId: 1156665457255456555
           }
         }
       }
       Objects {
-        Id: 10023973277798017994
-        Name: "PickupTrigger"
+        Id: 5680468702440544973
+        Name: "AddResources"
         Transform {
           Location {
           }
@@ -58,13 +74,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
-        Trigger {
-          TeamSettings {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          TriggerShape_v2 {
-            Value: "mc:etriggershape:box"
+        Script {
+          ScriptAsset {
+            Id: 3644364678235805442
           }
         }
       }

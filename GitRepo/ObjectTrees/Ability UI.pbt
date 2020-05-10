@@ -15,6 +15,7 @@ Objects {
     }
   }
   ParentId: 10619772409657403169
+  ChildIds: 4964961786779995859
   ChildIds: 3537341707065239414
   ChildIds: 66146666430165454
   Collidable_v2 {
@@ -110,7 +111,7 @@ Objects {
         R: 1
         G: 1
         B: 1
-        A: 1
+        A: 0.8
       }
       TeamSettings {
       }
@@ -168,7 +169,7 @@ Objects {
         R: 1
         G: 1
         B: 1
-        A: 1
+        A: 0.8
       }
       TeamSettings {
       }
@@ -1375,6 +1376,65 @@ Objects {
           Value: "mc:euianchor:middlecenter"
         }
       }
+    }
+  }
+}
+Objects {
+  Id: 4964961786779995859
+  Name: "AbilityUI_Handler"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10574993622557500753
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:DecoyPanel"
+      ObjectReference {
+        SelfId: 16612572202412904617
+      }
+    }
+    Overrides {
+      Name: "cs:ChangePanel"
+      ObjectReference {
+        SelfId: 5598223482028127498
+      }
+    }
+    Overrides {
+      Name: "cs:FlashPanel"
+      ObjectReference {
+        SelfId: 2770962653945797789
+      }
+    }
+    Overrides {
+      Name: "cs:GrenadeLeft"
+      ObjectReference {
+        SelfId: 5708214552749495620
+      }
+    }
+    Overrides {
+      Name: "cs:GrenadeRight"
+      ObjectReference {
+        SelfId: 5591166427243468696
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14643325243241629748
     }
   }
 }

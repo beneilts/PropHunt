@@ -50,6 +50,8 @@ function OnEquipped(equipment, player)
             pickupSound.lifeSpan = DEFAULT_LIFESPAN
         end
     end
+    
+    -- adding text here
 end
 
 -- nil OnUnequipped(Equipment)

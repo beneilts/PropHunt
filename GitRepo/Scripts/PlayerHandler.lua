@@ -68,9 +68,9 @@ function OnPlayerRespawn(player)
 	-- Remove any props or equipped weapons
 	RemovePlayerEquipment(player)
 	RemovePlayerProp(player)
-	
-	print("Current state: "..CurrentGameState)
-	
+		
+	--player:ClearResources()
+		
 	if CurrentGameState ~= ABGS.GAME_STATE_LOBBY then
 		-- Give either a prop or weapon
 		GivePlayerProp(player)
@@ -127,6 +127,9 @@ function GivePlayerEquipment(player)
 		grenade = World.SpawnAsset(GrenadeTemplate, {position = Vector3.UP * -100})
 		assert(grenade:IsA("Equipment"))
 		grenade:Equip(player)
+		
+		ThrowAbility = grenade:GetAbilities()[1] 
+		ThrowAbility.executeEvent:Connect(OnThrowExecute)
 	
 	else -- prop team
 		local propEquipment = World.SpawnAsset(DecoyTemplate)
@@ -348,7 +351,7 @@ function OnStateChanged (oldState, newState)
 	end 
 end
 
-function Tick(dTime)
+--function Tick(dTime)
 	--[[
 	for _player, _key in pairs(propTeam) do
 		-- If the player has a prop and is a valid player and is not dead
@@ -363,11 +366,15 @@ function Tick(dTime)
 		end
 	end	
 	--]]
+--end
+
+function OnThrowExecute (ability)
+	ability.owner:RemoveResource("Grenades", 1)
 end
 
 -- triggered when a prop team member tries to lay a decoy prop
 function OnDecoyExecute (ability)
-	local DecoyCount = ability:GetCustomProperty("DecoysLeft")
+	local DecoyCount = ability.owner:GetResource("Decoys")
 	if DecoyCount > 0 and ability.owner.isGrounded then
 		print("Placing decoy "..DecoyCount.." for "..ability.owner.name)
 		local playerProp = propTeam[ability.owner]["prop"]
@@ -376,13 +383,14 @@ function OnDecoyExecute (ability)
 		--print("Prop world position: "..playerProp:GetWorldPosition())
 		decoy:SetWorldPosition(playerProp:GetWorldPosition())
 		decoy:SetWorldRotation(playerProp:GetWorldRotation())
-		ability:SetNetworkedCustomProperty("DecoysLeft", DecoyCount-1)
+		ability.owner:RemoveResource("Decoys", 1)
+		--ability:SetNetworkedCustomProperty("DecoysLeft", DecoyCount-1)
 	end
 end
 
 function OnChangeProp(ability)
 	
-	local ChangesLeft = ability:GetCustomProperty("ChangesLeft")
+	local ChangesLeft = ability.owner:GetResource("Changes")
 	if ChangesLeft <= 0 then return end
 	print("## "..ability.owner.name.." entered change ability logic")
 	print("|| ChangingProp = "..tostring( propTeam[ability.owner]["changingProp"]).." | Player: "..ability.owner.name)
@@ -440,9 +448,14 @@ function OnChangeProp(ability)
 		propTeam[ability.owner]={["prop"]=propAttachment} -- Add to table for tracking purposes; this way we can Destroy it later
 		Task.Wait()	
 		
-		ability:SetNetworkedCustomProperty("ChangesLeft", ChangesLeft-1)
+		ability.owner:RemoveResource("Changes", 1)
+		--ability:SetNetworkedCustomProperty("ChangesLeft", ChangesLeft-1)
 		
 		-- Reset Decoy and Flash abilities
+		ability.owner:SetResource("Flashes", 1)
+		ability.owner:SetResource("Decoys", 3)
+		
+		--[[
 		local playerAbilities = ability.owner:GetAbilities()
 		for _, _ability in pairs(playerAbilities) do
 			if _ability.name=="Copy" then
@@ -450,7 +463,7 @@ function OnChangeProp(ability)
 			elseif _ability.name=="Flash" then
 				_ability:SetNetworkedCustomProperty("FlashLeft", 1)
 			end
-		end
+		end --]]
 		
 		propTeam[ability.owner]["changingProp"] = false
 		propTeam[ability.owner]["Q"] = 0
@@ -461,7 +474,7 @@ function OnChangeProp(ability)
 end
 
 function OnFlashExecute(ability)
-	local FlashLeft = ability:GetCustomProperty("FlashLeft")
+	local FlashLeft = ability.owner:GetResource("Flashes")
 	if FlashLeft <= 0 then return end
 	print(ability.owner.name.."is using Flash")	
 	-- Spawn flash vfx
@@ -482,7 +495,8 @@ function OnFlashExecute(ability)
 		Events.BroadcastToPlayer(player, "PlayerFlashed_Internal")
 	end
 	
-	ability:SetNetworkedCustomProperty("FlashLeft",FlashLeft-1)
+	--ability:SetNetworkedCustomProperty("FlashLeft",FlashLeft-1)
+	ability.owner:RemoveResource("Flashes", 1)
 end
 
 function RotateProp(_player) -- left or right
