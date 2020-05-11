@@ -23,6 +23,12 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:WhistleTemplate"
+      AssetReference {
+        Id: 4210932659964633836
+      }
+    }
+    Overrides {
       Name: "cs:PropTeamTracker"
       ObjectReference {
         SelfId: 10560063672146458174
@@ -35,9 +41,9 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:WhistleTemplate"
-      AssetReference {
-        Id: 4210932659964633836
+      Name: "cs:PlayerPointsSettings"
+      ObjectReference {
+        SelfId: 12727416947491758908
       }
     }
     Overrides {

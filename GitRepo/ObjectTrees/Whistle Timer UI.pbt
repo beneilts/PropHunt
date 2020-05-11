@@ -1,7 +1,7 @@
-Name: "Props Alive UI"
-RootId: 17265981028320958925
+Name: "Whistle Timer UI"
+RootId: 12029663987376422063
 Objects {
-  Id: 15521089682345290744
+  Id: 4786137906626758759
   Name: "UI Container"
   Transform {
     Location {
@@ -14,16 +14,15 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17265981028320958925
-  ChildIds: 15902739778933502523
-  ChildIds: 7376942338018200220
-  ChildIds: 17071299281020110877
-  WantsNetworking: true
+  ParentId: 12029663987376422063
+  ChildIds: 8502457574364965462
+  ChildIds: 6034886260376080170
+  ChildIds: 17989486326349068845
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
     RenderTransformPivot {
@@ -48,7 +47,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17071299281020110877
+  Id: 17989486326349068845
   Name: "UI Text Box"
   Transform {
     Location {
@@ -61,8 +60,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15521089682345290744
-  WantsNetworking: true
+  ParentId: 4786137906626758759
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -71,16 +69,16 @@ Objects {
   }
   Control {
     Width: 200
-    Height: 38
-    UIX: 81
-    UIY: 50
+    Height: 30
+    UIX: 75
+    UIY: 115
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
       }
     }
     Text {
-      Label: "Props Alive"
+      Label: "Until Whistle"
       Color {
         R: 1
         G: 1
@@ -108,8 +106,8 @@ Objects {
   }
 }
 Objects {
-  Id: 7376942338018200220
-  Name: "UI Image"
+  Id: 6034886260376080170
+  Name: "Time"
   Transform {
     Location {
     }
@@ -121,8 +119,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15521089682345290744
-  WantsNetworking: true
+  ParentId: 4786137906626758759
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -132,76 +129,19 @@ Objects {
   Control {
     Width: 50
     Height: 50
-    UIX: 26
-    UIY: 40
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Image {
-      Brush {
-        Id: 3511578302211237993
-      }
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 0.4
-      }
-      TeamSettings {
-      }
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 15902739778933502523
-  Name: "PropsCounter"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15521089682345290744
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 60
-    Height: 70
-    UIX: 20
-    UIY: 45
+    UIX: 24.5
+    UIY: 110
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
       }
     }
     Text {
-      Label: "5"
+      Label: "00"
       Color {
         R: 1
+        G: 1
+        B: 1
         A: 1
       }
       Size: 20
@@ -225,8 +165,8 @@ Objects {
   }
 }
 Objects {
-  Id: 18284045778394161009
-  Name: "PropsAliveTracker"
+  Id: 8502457574364965462
+  Name: "UI Image"
   Transform {
     Location {
     }
@@ -238,43 +178,47 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17265981028320958925
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:PropsCounter"
-      ObjectReference {
-        SelfId: 15902739778933502523
-      }
-    }
-    Overrides {
-      Name: "cs:UIContainer"
-      ObjectReference {
-        SelfId: 15521089682345290744
-      }
-    }
-    Overrides {
-      Name: "cs:PropTeamTracker"
-      ObjectReference {
-        SelfId: 10560063672146458174
-      }
-    }
-    Overrides {
-      Name: "cs:APIBasicGameState"
-      AssetReference {
-        Id: 11974742996071064388
-      }
-    }
-  }
-  WantsNetworking: true
+  ParentId: 4786137906626758759
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  Script {
-    ScriptAsset {
-      Id: 4508911950597060184
+  Control {
+    Width: 50
+    Height: 50
+    UIX: 25
+    UIY: 100
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 4259321831084830326
+      }
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 0.4
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
     }
   }
 }

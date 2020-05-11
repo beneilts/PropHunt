@@ -911,6 +911,31 @@ Objects {
         }
       }
     }
+    ParameterOverrideMap {
+      key: 18108744771157573570
+      value {
+        Overrides {
+          Name: "Anchor"
+          Enum {
+            Value: "mc:euianchor:bottomleft"
+          }
+        }
+        Overrides {
+          Name: "Dock"
+          Enum {
+            Value: "mc:euianchor:bottomleft"
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 40
+        }
+        Overrides {
+          Name: "UIY"
+          Float: -55
+        }
+      }
+    }
     TemplateAsset {
       Id: 5618667725740940225
     }
@@ -1144,7 +1169,7 @@ Objects {
         }
         Overrides {
           Name: "UIY"
-          Float: 0
+          Float: 10
         }
       }
     }

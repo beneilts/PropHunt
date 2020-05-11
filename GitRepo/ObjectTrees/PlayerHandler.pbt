@@ -432,6 +432,12 @@ Objects {
         Id: 12761170585670578928
       }
     }
+    Overrides {
+      Name: "cs:PlayerPointsSettings"
+      ObjectReference {
+        SelfId: 12727416947491758908
+      }
+    }
   }
   WantsNetworking: true
   Collidable_v2 {

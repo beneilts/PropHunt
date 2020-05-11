@@ -1,6 +1,85 @@
 Name: "Game Settings"
 RootId: 7886524035459811226
 Objects {
+  Id: 12727416947491758908
+  Name: "Player Points Settings"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7886524035459811226
+  ChildIds: 10468041443748804362
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:MediumPropBonus"
+      Int: 35
+    }
+    Overrides {
+      Name: "cs:LargePropBonus"
+      Int: 45
+    }
+    Overrides {
+      Name: "cs:WhistleBonus"
+      Int: 15
+    }
+    Overrides {
+      Name: "cs:PropKill"
+      Int: 100
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 10468041443748804362
+  Name: "PlayerPointsHandler"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12727416947491758908
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:PlayerPointsSettings"
+      ObjectReference {
+        SelfId: 12727416947491758908
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5735742759228279716
+    }
+  }
+}
+Objects {
   Id: 15031448399597244937
   Name: "Whistle Settings"
   Transform {

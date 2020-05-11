@@ -2,6 +2,7 @@ local PropTeamTracker = script:GetCustomProperty("PropTeamTracker"):WaitForObjec
 local RotationSpeed = script:GetCustomProperty("RotationSpeed")
 local ABGS = require(script:GetCustomProperty("API"))
 local DeadPlayersArea = script:GetCustomProperty("DeadPlayersArea"):WaitForObject()
+local PlayerPointsSettings = script:GetCustomProperty("PlayerPointsSettings"):WaitForObject()
 
 
 local FlashVFX = script:GetCustomProperty("FlashVFX")
@@ -60,6 +61,7 @@ end
 
 function OnPlayerRespawn(player)
 	print("Ready to do player respawn stuff for "..player.name)
+	print("--- "..player.name.." has "..tostring(player:GetResource("Points")).." points")
 	local CurrentGameState = ABGS.GetGameState()
 	player.movementControlMode = MovementControlMode.NONE -- disable player input so they can't move
 	-- Broadcast respawn event to client, since OnPlayerRespawn is server only
@@ -69,15 +71,14 @@ function OnPlayerRespawn(player)
 	RemovePlayerEquipment(player)
 	RemovePlayerProp(player)
 		
-	--player:ClearResources()
-		
 	if CurrentGameState ~= ABGS.GAME_STATE_LOBBY then
 		-- Give either a prop or weapon
 		GivePlayerProp(player)
 		GivePlayerEquipment(player)
 	end
+	
 	player.movementControlMode = MovementControlMode.NONE -- disable player input so they can't move
-	end
+end
 
 function OnPlayerDied(player)
 	print(player.name.." has died!")
@@ -174,46 +175,6 @@ function RemovePlayerEquipment(player)
 		end
 	end
 	
-	--if player.team == PreviousPropTeam and propTeam[player]then
-	
-		-- Disconnect ability events
-		--propTeam[player]["changeAbilityEvent"]:Disconnect()
-		--propTeam[player]["changeAbilityEvent"]=nil
-		
-		--propTeam[player]["decoyAbilityEvent"]:Disconnect()
-		--propTeam[player]["decoyAbilityEvent"]=nil
-				
-	--end
-	--[[
-	if seekerTeam[player]then
-		-- remove grenade
-		if seekerTeam[player]["grenade"] and seekerTeam[player]["grenade"]:IsValid() then
-			print("\\ Removing grenade")
-			seekerTeam[player]["grenade"]:Unequip()
-	
-			-- Have to check IsValid() again, because unequip may have destroyed this equipment
-			if seekerTeam[player]["grenade"]:IsValid() then
-				seekerTeam[player]["grenade"]:Destroy()
-			end
-	
-			seekerTeam[player]["grenade"] = nil
-		end
-		
-		Task.Wait()
-		-- remove gun
-		if seekerTeam[player]["equipment"] and seekerTeam[player]["equipment"]:IsValid() then
-			print("\\ Removing gun")
-			seekerTeam[player]["equipment"]:Unequip()
-	
-			-- Have to check IsValid() again, because unequip may have destroyed this equipment
-			if seekerTeam[player]["equipment"]:IsValid() then
-				seekerTeam[player]["equipment"]:Destroy()
-			end
-	
-			seekerTeam[player]["equipment"] = nil
-		end
-	end
-	--]]
 end
 
 function GivePlayerProp(player)
@@ -243,6 +204,16 @@ function GivePlayerProp(player)
 	end
 	
 	player:SetWorldScale(Vector3.New(playerScale)) -- Set world scale
+	
+	-- Set PropSize resource
+	-- Points are given based on prop size at each whistle (see WhistleHandlerServer)
+	if 0.2 <= playerScale and playerScale <= 0.6 then
+		player:SetResource("PropSize", 0)
+	elseif 0.6 < playerScale and playerScale <= 1 then
+		player:SetResource("PropSize", PlayerPointsSettings:GetCustomProperty("MediumPropBonus"))
+	elseif 1 < playerScale then
+		player:SetResource("PropSize", PlayerPointsSettings:GetCustomProperty("LargePropBonus"))
+	end
 	
 	-- ATTACH RANDOM PROP
 	local propAssetReference = propObject:GetCustomProperty("SelfReference") -- Each prop object has an Assest Reference to it self
@@ -392,16 +363,16 @@ function OnChangeProp(ability)
 	
 	local ChangesLeft = ability.owner:GetResource("Changes")
 	if ChangesLeft <= 0 then return end
-	print("## "..ability.owner.name.." entered change ability logic")
-	print("|| ChangingProp = "..tostring( propTeam[ability.owner]["changingProp"]).." | Player: "..ability.owner.name)
+	--print("## "..ability.owner.name.." entered change ability logic")
+	--print("|| ChangingProp = "..tostring( propTeam[ability.owner]["changingProp"]).." | Player: "..ability.owner.name)
 	propTeam[ability.owner]["changingProp"]=true -- disable ability to rotate prop so we don't get errors
 	Task.Wait()
 	
-	print("|| ChangingProp = "..tostring( propTeam[ability.owner]["changingProp"]).." | Player: "..ability.owner.name)
+	--print("|| ChangingProp = "..tostring( propTeam[ability.owner]["changingProp"]).." | Player: "..ability.owner.name)
 	
 	-- Remove current prop
 	if propTeam[ability.owner] and propTeam[ability.owner]["prop"] and propTeam[ability.owner]["prop"]:IsValid() then
-		print("## Removing current prop")
+		--print("## Removing current prop")
 		local previousProp = propTeam[ability.owner]["prop"].name
 		
 		-- Detach prop
@@ -430,6 +401,16 @@ function OnChangeProp(ability)
 			error("Prop object's PlayerScale property missing for "..propsList[randomValue].name)
 		end
 		
+		-- Set PropSize resource
+		-- Points are given based on prop size at each whistle (see WhistleHandlerServer)
+		if 0.2 <= playerScale and playerScale <= 0.6 then
+			ability.owner:SetResource("PropSize", 0)
+		elseif 0.6 < playerScale and playerScale <= 1 then
+			ability.owner:SetResource("PropSize", PlayerPointsSettings:GetCustomProperty("MediumPropBonus"))
+		elseif 1 < playerScale then
+			ability.owner:SetResource("PropSize", PlayerPointsSettings:GetCustomProperty("LargePropBonus"))
+		end
+			
 		ability.owner:SetWorldScale(Vector3.New(playerScale)) -- Set world scale
 		
 		local propAssetReference = propsList[randomValue]:GetCustomProperty("SelfReference") --PROPOBJECT:GetCustomProperty("SelfReference") -- Each prop object has an Assest Reference to it self
@@ -468,8 +449,8 @@ function OnChangeProp(ability)
 		propTeam[ability.owner]["changingProp"] = false
 		propTeam[ability.owner]["Q"] = 0
 		propTeam[ability.owner]["E"] = 0
-		print("|| ChangingProp = "..tostring( propTeam[ability.owner]["changingProp"]).." | Player: "..ability.owner.name)	
-		print("Q: "..propTeam[ability.owner]["Q"].."  E: "..propTeam[ability.owner]["E"])
+		--print("|| ChangingProp = "..tostring( propTeam[ability.owner]["changingProp"]).." | Player: "..ability.owner.name)	
+		--print("Q: "..propTeam[ability.owner]["Q"].."  E: "..propTeam[ability.owner]["E"])
 	end
 end
 

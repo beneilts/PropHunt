@@ -60,6 +60,7 @@ function OnWeaponInteracted(weapon, impactData)
     	local decoyHandler = templateRoot:FindChildByName("DecoyHandler")
     	if decoyHandler then
     		Events.BroadcastToAllPlayers ("DecoyDamage_Internal", DAMAGE_AMOUNT, templateRoot:GetReference(), impactData.weaponOwner)
+    		Events.Broadcast("DecoyDamage_Internal", DAMAGE_AMOUNT, nil, impactData.weaponOwner)
     		decoyHandler.context.ApplyDamage(DAMAGE_AMOUNT)
     	else
     		error(target.name.." does not have a DecoyHandler script")
