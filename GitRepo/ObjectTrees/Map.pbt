@@ -79,6 +79,7 @@ Objects {
   Name: "Spawn Points"
   Transform {
     Location {
+      X: -1350
     }
     Rotation {
     }

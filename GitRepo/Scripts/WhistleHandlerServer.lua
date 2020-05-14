@@ -5,6 +5,9 @@ local GameStateManager = script:GetCustomProperty("GameStateManager"):WaitForObj
 local PropTeamTracker = script:GetCustomProperty("PropTeamTracker"):WaitForObject()
 local ABGS = require(script:GetCustomProperty("API"))
 local PlayerPointsSettings = script:GetCustomProperty("PlayerPointsSettings"):WaitForObject()
+local UIContainer = script:GetCustomProperty("UIContainer"):WaitForObject()
+local TimeUI = script:GetCustomProperty("Time"):WaitForObject()
+
 
 local MatchDuration = GameStateManager:GetCustomProperty("MatchDuration")
 local WhistleTemplate = script:GetCustomProperty("WhistleTemplate")
@@ -17,17 +20,25 @@ local WhistleCount = 0
 function OnStateChanged (oldState, newState)
 	if newState == ABGS.GAME_STATE_SCOREBOARD and oldState ~= ABGS.GAME_STATE_SCOREBOARD then
 		WhistleCount=0
+	elseif newState == ABGS.GAME_STATE_HIDE and oldState ~= ABGS.GAME_STATE_HIDE then
+		UIContainer.visibility = Visibility.INHERIT
+	elseif newState == ABGS.GAME_STATE_ROUND_END and oldState ~= ABGS.GAME_ROUND_END then
+		UIContainer.visibility = Visibility.FORCE_OFF
 	end
 end
 
 function Tick(dTime)
 	local currentState = ABGS.GetGameState()
 	local timeRemaining = ABGS.GetTimeRemainingInState()
-	if currentState == ABGS.GAME_STATE_MATCH and NextWhistleTime > 0 and timeRemaining <= NextWhistleTime then
-		NextWhistleTime = NextWhistleTime-TimeBetweenWhistles
-		WhistleCount = WhistleCount+1
-		PropTeamWhistle()
+	if currentState == ABGS.GAME_STATE_MATCH and NextWhistleTime > 0 then
+		if timeRemaining <= NextWhistleTime then
+			WhistleCount = WhistleCount+1
+			PropTeamWhistle()
+			NextWhistleTime = NextWhistleTime-TimeBetweenWhistles
+		end
+		TimeUI.text =  tostring(math.floor(timeRemaining-NextWhistleTime))
 	end
+	
 end
 
 function PropTeamWhistle()

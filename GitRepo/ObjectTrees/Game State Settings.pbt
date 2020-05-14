@@ -500,7 +500,7 @@ Objects {
     }
     Overrides {
       Name: "cs:LobbyDuration"
-      Float: 10
+      Float: 240
     }
     Overrides {
       Name: "cs:RoundHasDuration"

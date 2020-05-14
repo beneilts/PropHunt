@@ -2,7 +2,7 @@ local PlayerPointsSettings = script:GetCustomProperty("PlayerPointsSettings"):Wa
 local PropKillPoints = PlayerPointsSettings:GetCustomProperty("PropKill")
 
 function OnPlayerDamaged(player, damage)         
-	damage.sourcePlayer:AddResource("Points", damage.amount)
+	damage.sourcePlayer:AddResource("Points", math.floor(damage.amount))
 	print(damage.sourcePlayer.name..": "..damage.amount.." points for damaging prop")
 	--Task.Wait(.5)
 	--Events.BroadcastToPlayer(damage.sourcePlayer, "PlayerRecievedPoints", tostring(damage.amount))
@@ -21,7 +21,7 @@ function OnPlayerJoined(player)
 end
 
 function OnDecoyDamaged(damage, target, sourcePlayer)
-	sourcePlayer:AddResource("Points", damage)
+	sourcePlayer:AddResource("Points", math.floor(damage))
 	print(sourcePlayer.name..": "..damage.." points for damaging decoy")
 	--Task.Wait(.5)
 	--Events.BroadcastToPlayer(sourcePlayer, "PlayerRecievedPoints", tostring(damage))

@@ -1,6 +1,32 @@
 Name: "Environment"
 RootId: 9322468891219055816
 Objects {
+  Id: 3039218638456440871
+  Name: "Sawmill"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9322468891219055816
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Sawmill"
+  }
+}
+Objects {
   Id: 10005074784157121906
   Name: "Default Sky"
   Transform {
@@ -19,6 +45,7 @@ Objects {
   ChildIds: 13551641546322277000
   ChildIds: 7155168770677928712
   ChildIds: 10505154200474359396
+  ChildIds: 17139892586029571336
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -29,6 +56,105 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 17139892586029571336
+  Name: "Sun Light"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Pitch: -28.8745422
+      Yaw: -126.051941
+      Roll: 8.92734146
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10005074784157121906
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Use Temperature"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Light Color"
+      Color {
+        R: 1
+        G: 0.955973327
+        B: 0.73791039
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Shape"
+      Int: 1
+    }
+    Overrides {
+      Name: "bp:Size"
+      Float: 5
+    }
+    Overrides {
+      Name: "bp:Light Shaft Bloom"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Cast Volumetric Shadows"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Light Shaft Mask Darkness"
+      Float: 0.5
+    }
+    Overrides {
+      Name: "bp:Intensity"
+      Float: 3.5
+    }
+    Overrides {
+      Name: "bp:Sun Disc Color"
+      Color {
+        R: 3
+        G: 3
+        B: 3
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Light Shaft Bloom Scale"
+      Float: 0.2
+    }
+    Overrides {
+      Name: "bp:Light Shaft Bloom Threshold"
+      Float: 0.05
+    }
+    Overrides {
+      Name: "bp:Light Shaft Occlusion"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Light Shaft Bloom Tint"
+      Color {
+        R: 1
+        G: 0.998476863
+        B: 0.77
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 16910278292812118833
+    }
   }
 }
 Objects {
@@ -340,44 +466,6 @@ Objects {
   }
 }
 Objects {
-  Id: 15165390755802163635
-  Name: "Cube - Polished"
-  Transform {
-    Location {
-      X: 250
-      Z: 250
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 5.50000334
-      Z: 4.75000143
-    }
-  }
-  ParentId: 9322468891219055816
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:forceon"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12227211283451513195
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
   Id: 14982843161775482339
   Name: "Default Floor"
   Transform {
@@ -388,8 +476,8 @@ Objects {
     Rotation {
     }
     Scale {
-      X: 50
-      Y: 50
+      X: 200
+      Y: 100
       Z: 1
     }
   }

@@ -66,7 +66,7 @@ function OnPlayerRespawn(player)
 	player.movementControlMode = MovementControlMode.NONE -- disable player input so they can't move
 	-- Broadcast respawn event to client, since OnPlayerRespawn is server only
 	local result = Events.BroadcastToPlayer(player, "PlayerRespawned", CurrentGameState)
-	
+	Task.Wait()
 	-- Remove any props or equipped weapons
 	RemovePlayerEquipment(player)
 	RemovePlayerProp(player)
@@ -78,6 +78,7 @@ function OnPlayerRespawn(player)
 	end
 	
 	player.movementControlMode = MovementControlMode.NONE -- disable player input so they can't move
+	print("\n")
 end
 
 function OnPlayerDied(player)
@@ -482,7 +483,7 @@ end
 
 function RotateProp(_player) -- left or right
 
-	print("^^ ChangingProp = "..tostring( propTeam[_player]["changingProp"]).." | Player: ".._player.name)
+	--print("^^ ChangingProp = "..tostring( propTeam[_player]["changingProp"]).." | Player: ".._player.name)
 	if not _player:IsValid() or propTeam[_player]["prop"] == nil then
 		print("^^ Player is invalid or propTeam entry doesn't exist")
 	end 
@@ -560,17 +561,17 @@ function ChangePlayerAbilities(team, mode)
 		players = Game.GetPlayers({includeTeams = team})
 	end
 	
-	print("==============================")
+	--print("==============================")
 	for _, player in pairs(players) do
 		local abilities = player:GetAbilities()
 		
 		for _, ability in pairs(abilities) do
-			print(player.name..": setting "..ability.name.." to "..tostring(mode))
+			--print(player.name..": setting "..ability.name.." to "..tostring(mode))
 			ability.isEnabled = mode
 		end
-		print("\n")
+		--print("\n")
 	end
-	print("==============================")
+	--print("==============================")
 end
 
 Game.playerJoinedEvent:Connect(OnPlayerJoin)

@@ -8,15 +8,6 @@ Assets {
   }
 }
 Assets {
-  Id: 12227211283451513195
-  Name: "Cube - Polished"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cube_hq_test_001"
-  }
-}
-Assets {
   Id: 12095835209017042614
   Name: "Cube"
   PlatformAssetType: 1
