@@ -1,0 +1,71 @@
+MetaVersion: 1
+MarketplaceDetails {
+  Id: "ca3868de87304865be7c932457f95dc3"
+  OwnerAccountId: "69912b933d674a35accb9a1f6ac43bda"
+  OwnerName: "TSMVayne"
+  Version: "1.0.0"
+}
+AssetIdsOriginalToNew {
+  key: 338072847107423032
+  value: 896844004555648992
+}
+AssetIdsOriginalToNew {
+  key: 642390163552913228
+  value: 1398076578791894796
+}
+AssetIdsOriginalToNew {
+  key: 4443152246558213256
+  value: 11847477701288983552
+}
+AssetIdsOriginalToNew {
+  key: 5125025125301151932
+  value: 6361001006361289460
+}
+AssetIdsOriginalToNew {
+  key: 6265645832025772655
+  value: 1386886886805771745
+}
+AssetIdsOriginalToNew {
+  key: 6613620722395289867
+  value: 15303910842532171605
+}
+AssetIdsOriginalToNew {
+  key: 6727653347147145231
+  value: 16902651657312293724
+}
+AssetIdsOriginalToNew {
+  key: 7746034485035071000
+  value: 16995601983413623047
+}
+AssetIdsOriginalToNew {
+  key: 9926163919330221072
+  value: 6070322186119999136
+}
+AssetIdsOriginalToNew {
+  key: 10128358066075876653
+  value: 3239251957872799045
+}
+AssetIdsOriginalToNew {
+  key: 11442159190215062366
+  value: 6406827950189788347
+}
+AssetIdsOriginalToNew {
+  key: 12192235194968643175
+  value: 8516664593280936514
+}
+AssetIdsOriginalToNew {
+  key: 15053507587208472864
+  value: 2481543463747517706
+}
+AssetIdsOriginalToNew {
+  key: 17434549301013185203
+  value: 13594096707049509177
+}
+AssetIdsOriginalToNew {
+  key: 17908082390727292734
+  value: 9422437711776339935
+}
+AssetIdsOriginalToNew {
+  key: 18309356327332077292
+  value: 10686860328500592095
+}

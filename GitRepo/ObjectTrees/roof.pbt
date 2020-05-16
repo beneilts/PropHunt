@@ -83,7 +83,7 @@ Objects {
     Location {
       X: -23.1748047
       Y: -712.30249
-      Z: -19.1681519
+      Z: -20
     }
     Rotation {
       Yaw: 89.9999771
@@ -115,8 +115,8 @@ Objects {
     Overrides {
       Name: "ma:Shared_Trim:color"
       Color {
-        R: 0.486000031
-        G: 0.144834489
+        R: 0.23
+        G: 0.0685430691
         A: 1
       }
     }
@@ -131,6 +131,15 @@ Objects {
     Overrides {
       Name: "ma:Building_Roof:vtile"
       Float: 0.536913931
+    }
+    Overrides {
+      Name: "ma:Building_Roof:color"
+      Color {
+        R: 0.223
+        G: 0.223
+        B: 0.223
+        A: 1
+      }
     }
   }
   Collidable_v2 {

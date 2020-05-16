@@ -5,9 +5,9 @@ Objects {
   Name: "mannequin_guy"
   Transform {
     Location {
-      X: -2650
-      Y: -1350
-      Z: 7.62939453e-06
+      X: -2572.46924
+      Y: -1037.74023
+      Z: 14.7904053
     }
     Rotation {
       Yaw: 89.9999542
@@ -933,7 +933,7 @@ Objects {
       Z: 113.868
     }
     Rotation {
-      Yaw: -89.9999542
+      Yaw: -89.999939
       Roll: 4.12600899
     }
     Scale {
@@ -2499,7 +2499,7 @@ Objects {
   Transform {
     Location {
       X: 250
-      Z: 7.62939453e-06
+      Z: 15
     }
     Rotation {
       Yaw: 89.9999542
@@ -4991,7 +4991,7 @@ Objects {
   Transform {
     Location {
       X: 50
-      Z: 7.62939453e-06
+      Z: 15
     }
     Rotation {
       Yaw: 89.9999619
@@ -7483,7 +7483,7 @@ Objects {
   Transform {
     Location {
       X: -125
-      Z: 7.62939453e-06
+      Z: 15
     }
     Rotation {
       Yaw: 89.9999542
@@ -9975,7 +9975,7 @@ Objects {
   Transform {
     Location {
       X: -200
-      Z: 7.62939453e-06
+      Z: 15
     }
     Rotation {
       Yaw: 89.9999542
