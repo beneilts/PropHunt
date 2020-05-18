@@ -8,6 +8,51 @@ Assets {
   }
 }
 Assets {
+  Id: 17860830441923358832
+  Name: "Plastic Shiny"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "plastic_shiny_001"
+  }
+}
+Assets {
+  Id: 17785162517261577581
+  Name: "Craftsman Part - Window 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_part_window_003"
+  }
+}
+Assets {
+  Id: 17616555706524180168
+  Name: "Fantasy Pommel 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_pommel_002"
+  }
+}
+Assets {
+  Id: 17609149353171719671
+  Name: "Cube - bottom aligned"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_001"
+  }
+}
+Assets {
+  Id: 17240925491654302561
+  Name: "Concrete Rough"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_gen_concrete_rough_001"
+  }
+}
+Assets {
   Id: 17216429571024405227
   Name: "Ring - Beveled Thick"
   PlatformAssetType: 1
@@ -71,12 +116,12 @@ Assets {
   }
 }
 Assets {
-  Id: 15467279230777661805
-  Name: "Lense"
+  Id: 15600672674220494197
+  Name: "Ivy 03"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_lense_001"
+    AssetId: "sm_ivy_generic_003"
   }
 }
 Assets {
@@ -98,6 +143,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14815665943899521890
+  Name: "Craftsman Interior Door 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_door_002"
+  }
+}
+Assets {
   Id: 14796711042662669165
   Name: "Cube - bottom aligned"
   PlatformAssetType: 1
@@ -116,15 +170,6 @@ Assets {
   }
 }
 Assets {
-  Id: 14388296974260843231
-  Name: "Ellipsoid - Truncated"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ellipsoid_truncated_001"
-  }
-}
-Assets {
   Id: 14231809728886464860
   Name: "Wood Raw White"
   PlatformAssetType: 2
@@ -140,6 +185,24 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_wood_planks_001_uv"
+  }
+}
+Assets {
+  Id: 13566866265629007272
+  Name: "Small Crate Lid"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_crate_narrow_lid_simple_160cm_001"
+  }
+}
+Assets {
+  Id: 13527235394198871686
+  Name: "Whitebox Roof 01 Peak"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_gen_whitebox_roof_001_peak"
   }
 }
 Assets {
@@ -188,6 +251,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12095835209017042614
+  Name: "Cube"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_002"
+  }
+}
+Assets {
   Id: 12056825294615652422
   Name: "Simple Crate 150cm"
   PlatformAssetType: 1
@@ -197,12 +269,30 @@ Assets {
   }
 }
 Assets {
+  Id: 11945076888191994327
+  Name: "Metal Frame 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_frames_001_uv"
+  }
+}
+Assets {
   Id: 11871060372187680148
   Name: "Decal Stains Bottom 01"
   PlatformAssetType: 14
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "bp_decal_stain_bottom_001"
+  }
+}
+Assets {
+  Id: 11610943028052727898
+  Name: "Hemisphere"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_hemisphere_001"
   }
 }
 Assets {
@@ -251,12 +341,48 @@ Assets {
   }
 }
 Assets {
+  Id: 10782112515531017680
+  Name: "Pipe - Quarter Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_quarter-pipe_002"
+  }
+}
+Assets {
+  Id: 10766975867019021707
+  Name: "Glass 01 (no distortion)"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_basic_glass_001"
+  }
+}
+Assets {
+  Id: 10638412952593401288
+  Name: "Pipe - 4-Sided Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pipe_4_sided_thin_001"
+  }
+}
+Assets {
   Id: 10613300414682810643
   Name: "Rope"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_rope_001"
+  }
+}
+Assets {
+  Id: 10602013473409766249
+  Name: "Cylinder"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_002"
   }
 }
 Assets {
@@ -296,6 +422,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9480674718042530341
+  Name: "Cone - Hollow"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cone-hollow_001"
+  }
+}
+Assets {
   Id: 9242571079105582533
   Name: "Pipe Curved 90 Large"
   PlatformAssetType: 1
@@ -311,6 +446,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_torus_003"
+  }
+}
+Assets {
+  Id: 9215348365866351568
+  Name: "Cylinder - Rounded Small"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_rounded_003"
   }
 }
 Assets {
@@ -341,12 +485,48 @@ Assets {
   }
 }
 Assets {
+  Id: 8530349593571866885
+  Name: "Modern Weapon - Sight 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_modern_sight_002"
+  }
+}
+Assets {
   Id: 8455476848519957619
   Name: "Modern Weapon - Bullet 01 Casing"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_weap_modern_ammo_bullet_case_001"
+  }
+}
+Assets {
+  Id: 7970222735081279493
+  Name: "Sphere"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_sphere_002"
+  }
+}
+Assets {
+  Id: 7778675157039074743
+  Name: "Pipe - 4-Sided Thick"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pipe_4_sided_thick_001"
+  }
+}
+Assets {
+  Id: 7473518042998445024
+  Name: "Ivy 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ivy_generic_002"
   }
 }
 Assets {
@@ -377,6 +557,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5880459317880926892
+  Name: "Curtains Staright"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_curtain_02"
+  }
+}
+Assets {
   Id: 5046386588038465824
   Name: "Wood 2x4 4m"
   PlatformAssetType: 1
@@ -395,12 +584,30 @@ Assets {
   }
 }
 Assets {
+  Id: 4372281166072313565
+  Name: "Cylinder - Bottom-Aligned"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_001"
+  }
+}
+Assets {
   Id: 4233572198356242960
   Name: "Gem - Radiant Polished"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_gem_radiant_polished_001"
+  }
+}
+Assets {
+  Id: 4232391847469820774
+  Name: "Whitebox Wall 01 Half - Window Slot 1x"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_gen_whitebox_wall_001_winHalfSlot1x"
   }
 }
 Assets {
@@ -455,6 +662,24 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_large_board_6m"
+  }
+}
+Assets {
+  Id: 3065043153909758577
+  Name: "Pipe"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pipe_001"
+  }
+}
+Assets {
+  Id: 2493884381847921671
+  Name: "Girder Small 4m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_girder_19th_century_4m_001"
   }
 }
 Assets {
@@ -536,6 +761,15 @@ Assets {
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "bp_decal_bullet_wood_001"
+  }
+}
+Assets {
+  Id: 517490858908191490
+  Name: "Roof Asphalt 03"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_roof_asphalt_003_uv"
   }
 }
 Assets {

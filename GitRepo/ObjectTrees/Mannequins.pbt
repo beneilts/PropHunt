@@ -5,9 +5,9 @@ Objects {
   Name: "mannequin_guy"
   Transform {
     Location {
-      X: -2572.46924
-      Y: -1037.74023
-      Z: 14.7904053
+      X: -735
+      Y: -8625
+      Z: 750
     }
     Rotation {
       Yaw: 89.9999542
@@ -392,9 +392,9 @@ Objects {
   Name: "leg_upper_l"
   Transform {
     Location {
-      X: -0.781518936
-      Y: -12.2429962
-      Z: 85.497
+      X: -0.781240463
+      Y: -12.243165
+      Z: 85
     }
     Rotation {
       Pitch: 1.76263273
@@ -928,9 +928,9 @@ Objects {
   Name: "hips"
   Transform {
     Location {
-      X: -2.508
-      Y: -1.1920929e-06
-      Z: 113.868
+      X: -2.50781274
+      Y: -1.66893e-06
+      Z: 115
     }
     Rotation {
       Yaw: -89.999939

@@ -1,31 +1,20 @@
 Assets {
-  Id: 15212066009153692061
-  Name: "Custom Plastic Matte_1"
+  Id: 10763686259975285610
+  Name: "Black_Jeep_Plastic"
   PlatformAssetType: 13
   SerializationVersion: 59
   CustomMaterialAsset {
-    BaseMaterialId: 132672053610873933
+    BaseMaterialId: 11436023202306815330
     ParameterOverrides {
       Overrides {
         Name: "color"
         Color {
-          R: 0.0572916679
-          G: 0.0395188108
-          B: 0.0088230595
           A: 1
         }
       }
-      Overrides {
-        Name: "roughness"
-        Float: 0.697731555
-      }
-      Overrides {
-        Name: "specular"
-        Float: 0
-      }
     }
     Assets {
-      Id: 132672053610873933
+      Id: 11436023202306815330
       Name: "Plastic Matte"
       PlatformAssetType: 2
       PrimaryAsset {
