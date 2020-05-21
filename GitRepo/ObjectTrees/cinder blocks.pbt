@@ -1,7 +1,759 @@
 Name: "cinder blocks"
-RootId: 7205375941805979454
+RootId: 13481556437256749091
 Objects {
-  Id: 5110573528750689826
+  Id: 4436409083167286813
+  Name: "Cinder Block Stack"
+  Transform {
+    Location {
+      X: 390
+      Y: -165
+    }
+    Rotation {
+      Yaw: 179.999954
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13481556437256749091
+  ChildIds: 7759207568049538852
+  ChildIds: 13119039916292591500
+  ChildIds: 9409453104232461504
+  ChildIds: 13644682478195545081
+  ChildIds: 5605558548982919386
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 5605558548982919386
+  Name: "Cinder Block"
+  Transform {
+    Location {
+      Y: -0.3671875
+      Z: 107.613342
+    }
+    Rotation {
+      Yaw: -86.22332
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4436409083167286813
+  ChildIds: 12937674095468724015
+  ChildIds: 5684158113307693195
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 5684158113307693195
+  Name: "Pipe - 4-Sided Thick"
+  Transform {
+    Location {
+      X: 19.4248047
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.389636248
+      Y: 0.319426447
+      Z: 0.270251572
+    }
+  }
+  ParentId: 5605558548982919386
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17240925491654302561
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 1.704
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7778675157039074743
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 12937674095468724015
+  Name: "Pipe - 4-Sided Thick"
+  Transform {
+    Location {
+      X: -19.425293
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.389636248
+      Y: 0.319426447
+      Z: 0.270251572
+    }
+  }
+  ParentId: 5605558548982919386
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17240925491654302561
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 1.704
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7778675157039074743
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 13644682478195545081
+  Name: "Cinder Block"
+  Transform {
+    Location {
+      Y: -0.1015625
+      Z: 80.8701172
+    }
+    Rotation {
+      Yaw: -78.7232819
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4436409083167286813
+  ChildIds: 7900175775620104401
+  ChildIds: 4301727267394253859
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 4301727267394253859
+  Name: "Pipe - 4-Sided Thick"
+  Transform {
+    Location {
+      X: 19.4248047
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.389636248
+      Y: 0.319426447
+      Z: 0.270251572
+    }
+  }
+  ParentId: 13644682478195545081
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17240925491654302561
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 1.704
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7778675157039074743
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 7900175775620104401
+  Name: "Pipe - 4-Sided Thick"
+  Transform {
+    Location {
+      X: -19.425293
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.389636248
+      Y: 0.319426447
+      Z: 0.270251572
+    }
+  }
+  ParentId: 13644682478195545081
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17240925491654302561
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 1.704
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7778675157039074743
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 9409453104232461504
+  Name: "Cinder Block"
+  Transform {
+    Location {
+      Y: 0.592773438
+      Z: 54.446167
+    }
+    Rotation {
+      Yaw: -93.0346909
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4436409083167286813
+  ChildIds: 176926597987986016
+  ChildIds: 5268136120468659434
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 5268136120468659434
+  Name: "Pipe - 4-Sided Thick"
+  Transform {
+    Location {
+      X: 19.4248047
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.389636248
+      Y: 0.319426447
+      Z: 0.270251572
+    }
+  }
+  ParentId: 9409453104232461504
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17240925491654302561
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 1.704
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7778675157039074743
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 176926597987986016
+  Name: "Pipe - 4-Sided Thick"
+  Transform {
+    Location {
+      X: -19.425293
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.389636248
+      Y: 0.319426447
+      Z: 0.270251572
+    }
+  }
+  ParentId: 9409453104232461504
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17240925491654302561
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 1.704
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7778675157039074743
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 13119039916292591500
+  Name: "Cinder Block"
+  Transform {
+    Location {
+      Y: -0.751953125
+      Z: 27.2905273
+    }
+    Rotation {
+      Yaw: -85.6134415
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4436409083167286813
+  ChildIds: 8741809116246715761
+  ChildIds: 7251760902230755227
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 7251760902230755227
+  Name: "Pipe - 4-Sided Thick"
+  Transform {
+    Location {
+      X: 19.4248047
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.389636248
+      Y: 0.319426447
+      Z: 0.270251572
+    }
+  }
+  ParentId: 13119039916292591500
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17240925491654302561
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 1.704
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7778675157039074743
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 8741809116246715761
+  Name: "Pipe - 4-Sided Thick"
+  Transform {
+    Location {
+      X: -19.425293
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.389636248
+      Y: 0.319426447
+      Z: 0.270251572
+    }
+  }
+  ParentId: 13119039916292591500
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17240925491654302561
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 1.704
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7778675157039074743
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 7759207568049538852
+  Name: "Cinder Block"
+  Transform {
+    Location {
+      Y: 0.626953125
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4436409083167286813
+  ChildIds: 12626173396631216314
+  ChildIds: 17123615081389961893
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 17123615081389961893
+  Name: "Pipe - 4-Sided Thick"
+  Transform {
+    Location {
+      X: 19.4248047
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.389636248
+      Y: 0.319426447
+      Z: 0.270251572
+    }
+  }
+  ParentId: 7759207568049538852
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17240925491654302561
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 1.704
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7778675157039074743
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 12626173396631216314
+  Name: "Pipe - 4-Sided Thick"
+  Transform {
+    Location {
+      X: -19.425293
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.389636248
+      Y: 0.319426447
+      Z: 0.270251572
+    }
+  }
+  ParentId: 7759207568049538852
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17240925491654302561
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 1.704
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7778675157039074743
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 2135287297277862697
   Name: "Cinder Block Stack"
   Transform {
     Location {
@@ -17,12 +769,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7205375941805979454
-  ChildIds: 11989737437525574670
-  ChildIds: 4704538202529279460
-  ChildIds: 15261440183720470335
-  ChildIds: 9273502300506509965
-  ChildIds: 1060163753316791270
+  ParentId: 13481556437256749091
+  ChildIds: 6656141376860493709
+  ChildIds: 4916865462630124404
+  ChildIds: 11271531903297168684
+  ChildIds: 11383417050288983609
+  ChildIds: 8461563008301417060
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -34,7 +786,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1060163753316791270
+  Id: 8461563008301417060
   Name: "Cinder Block"
   Transform {
     Location {
@@ -50,9 +802,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5110573528750689826
-  ChildIds: 2122123332127208910
-  ChildIds: 12030680275961586602
+  ParentId: 2135287297277862697
+  ChildIds: 9056246651328923905
+  ChildIds: 1296897915254292938
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -64,7 +816,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12030680275961586602
+  Id: 1296897915254292938
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -78,7 +830,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 1060163753316791270
+  ParentId: 8461563008301417060
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -121,7 +873,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2122123332127208910
+  Id: 9056246651328923905
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -135,7 +887,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 1060163753316791270
+  ParentId: 8461563008301417060
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -178,7 +930,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9273502300506509965
+  Id: 11383417050288983609
   Name: "Cinder Block"
   Transform {
     Location {
@@ -194,9 +946,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5110573528750689826
-  ChildIds: 17336610726276684204
-  ChildIds: 9829143065598830821
+  ParentId: 2135287297277862697
+  ChildIds: 3829144184264621927
+  ChildIds: 2811940751302555802
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -208,7 +960,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9829143065598830821
+  Id: 2811940751302555802
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -222,7 +974,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 9273502300506509965
+  ParentId: 11383417050288983609
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -265,7 +1017,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17336610726276684204
+  Id: 3829144184264621927
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -279,7 +1031,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 9273502300506509965
+  ParentId: 11383417050288983609
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -322,7 +1074,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15261440183720470335
+  Id: 11271531903297168684
   Name: "Cinder Block"
   Transform {
     Location {
@@ -338,9 +1090,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5110573528750689826
-  ChildIds: 17689533537490358043
-  ChildIds: 13505100566767508794
+  ParentId: 2135287297277862697
+  ChildIds: 7301169676752141415
+  ChildIds: 2846678969650073256
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -352,7 +1104,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13505100566767508794
+  Id: 2846678969650073256
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -366,7 +1118,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 15261440183720470335
+  ParentId: 11271531903297168684
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -409,7 +1161,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17689533537490358043
+  Id: 7301169676752141415
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -423,7 +1175,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 15261440183720470335
+  ParentId: 11271531903297168684
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -466,7 +1218,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4704538202529279460
+  Id: 4916865462630124404
   Name: "Cinder Block"
   Transform {
     Location {
@@ -482,9 +1234,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5110573528750689826
-  ChildIds: 16610378841535719115
-  ChildIds: 15814848497345821490
+  ParentId: 2135287297277862697
+  ChildIds: 11887852416587079083
+  ChildIds: 11588125399568549659
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -496,7 +1248,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15814848497345821490
+  Id: 11588125399568549659
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -510,7 +1262,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 4704538202529279460
+  ParentId: 4916865462630124404
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -553,7 +1305,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16610378841535719115
+  Id: 11887852416587079083
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -567,7 +1319,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 4704538202529279460
+  ParentId: 4916865462630124404
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -610,7 +1362,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11989737437525574670
+  Id: 6656141376860493709
   Name: "Cinder Block"
   Transform {
     Location {
@@ -625,9 +1377,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5110573528750689826
-  ChildIds: 10537429136143081630
-  ChildIds: 4281961778634670031
+  ParentId: 2135287297277862697
+  ChildIds: 5614339603494530448
+  ChildIds: 439675936159627805
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -639,7 +1391,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4281961778634670031
+  Id: 439675936159627805
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -653,7 +1405,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 11989737437525574670
+  ParentId: 6656141376860493709
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -696,7 +1448,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10537429136143081630
+  Id: 5614339603494530448
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -710,7 +1462,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 11989737437525574670
+  ParentId: 6656141376860493709
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -753,7 +1505,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13717043385128474228
+  Id: 17743972247484729615
   Name: "Cinder Block Stack"
   Transform {
     Location {
@@ -769,12 +1521,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7205375941805979454
-  ChildIds: 3069763929800671792
-  ChildIds: 10783296737009967918
-  ChildIds: 15398134337842094116
-  ChildIds: 1769927393871822934
-  ChildIds: 11512604560630862306
+  ParentId: 13481556437256749091
+  ChildIds: 14376405566043885015
+  ChildIds: 256201769680466554
+  ChildIds: 9642713453415498903
+  ChildIds: 16311903285296874764
+  ChildIds: 13851301598602067780
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -786,7 +1538,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11512604560630862306
+  Id: 13851301598602067780
   Name: "Cinder Block"
   Transform {
     Location {
@@ -802,9 +1554,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13717043385128474228
-  ChildIds: 9577020214104367325
-  ChildIds: 9144967514106419657
+  ParentId: 17743972247484729615
+  ChildIds: 3282182031121497188
+  ChildIds: 17718780587510946366
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -816,7 +1568,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9144967514106419657
+  Id: 17718780587510946366
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -830,7 +1582,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 11512604560630862306
+  ParentId: 13851301598602067780
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -873,7 +1625,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9577020214104367325
+  Id: 3282182031121497188
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -887,7 +1639,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 11512604560630862306
+  ParentId: 13851301598602067780
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -930,7 +1682,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1769927393871822934
+  Id: 16311903285296874764
   Name: "Cinder Block"
   Transform {
     Location {
@@ -946,9 +1698,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13717043385128474228
-  ChildIds: 13568640772825381468
-  ChildIds: 12013723476713329309
+  ParentId: 17743972247484729615
+  ChildIds: 12707310614601109332
+  ChildIds: 8239784041356544389
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -960,7 +1712,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12013723476713329309
+  Id: 8239784041356544389
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -974,7 +1726,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 1769927393871822934
+  ParentId: 16311903285296874764
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1017,7 +1769,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13568640772825381468
+  Id: 12707310614601109332
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -1031,7 +1783,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 1769927393871822934
+  ParentId: 16311903285296874764
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1074,7 +1826,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15398134337842094116
+  Id: 9642713453415498903
   Name: "Cinder Block"
   Transform {
     Location {
@@ -1090,9 +1842,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13717043385128474228
-  ChildIds: 15829980909066596220
-  ChildIds: 71527629586782888
+  ParentId: 17743972247484729615
+  ChildIds: 15068623614291613670
+  ChildIds: 4858931717513620754
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1104,7 +1856,7 @@ Objects {
   }
 }
 Objects {
-  Id: 71527629586782888
+  Id: 4858931717513620754
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -1118,7 +1870,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 15398134337842094116
+  ParentId: 9642713453415498903
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1161,7 +1913,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15829980909066596220
+  Id: 15068623614291613670
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -1175,7 +1927,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 15398134337842094116
+  ParentId: 9642713453415498903
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1218,7 +1970,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10783296737009967918
+  Id: 256201769680466554
   Name: "Cinder Block"
   Transform {
     Location {
@@ -1234,9 +1986,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13717043385128474228
-  ChildIds: 3034155869643724239
-  ChildIds: 1607503697045114991
+  ParentId: 17743972247484729615
+  ChildIds: 12794678792976739539
+  ChildIds: 17579774614965144138
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1248,7 +2000,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1607503697045114991
+  Id: 17579774614965144138
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -1262,7 +2014,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 10783296737009967918
+  ParentId: 256201769680466554
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1305,7 +2057,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3034155869643724239
+  Id: 12794678792976739539
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -1319,7 +2071,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 10783296737009967918
+  ParentId: 256201769680466554
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1362,7 +2114,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3069763929800671792
+  Id: 14376405566043885015
   Name: "Cinder Block"
   Transform {
     Location {
@@ -1377,9 +2129,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13717043385128474228
-  ChildIds: 10914891822814757368
-  ChildIds: 13906773367417758071
+  ParentId: 17743972247484729615
+  ChildIds: 11101623527480942347
+  ChildIds: 1503271165393563925
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1391,7 +2143,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13906773367417758071
+  Id: 1503271165393563925
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -1405,7 +2157,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 3069763929800671792
+  ParentId: 14376405566043885015
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1448,7 +2200,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10914891822814757368
+  Id: 11101623527480942347
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -1462,7 +2214,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 3069763929800671792
+  ParentId: 14376405566043885015
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1505,7 +2257,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3522817074686701501
+  Id: 16661680688966696832
   Name: "Cinder Block Stack"
   Transform {
     Location {
@@ -1521,12 +2273,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7205375941805979454
-  ChildIds: 14442340408003321686
-  ChildIds: 2305862525540604232
-  ChildIds: 16778972775013434021
-  ChildIds: 14987358766216652504
-  ChildIds: 10415747959817127942
+  ParentId: 13481556437256749091
+  ChildIds: 1262601169017541856
+  ChildIds: 17891574220619253331
+  ChildIds: 282901132453141878
+  ChildIds: 8754732566318710677
+  ChildIds: 7457691035411068540
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1538,7 +2290,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10415747959817127942
+  Id: 7457691035411068540
   Name: "Cinder Block"
   Transform {
     Location {
@@ -1554,9 +2306,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3522817074686701501
-  ChildIds: 12890925480348473505
-  ChildIds: 2996369057976894562
+  ParentId: 16661680688966696832
+  ChildIds: 12089905835258570894
+  ChildIds: 11967094508582910952
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1568,7 +2320,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2996369057976894562
+  Id: 11967094508582910952
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -1582,7 +2334,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 10415747959817127942
+  ParentId: 7457691035411068540
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1625,7 +2377,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12890925480348473505
+  Id: 12089905835258570894
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -1639,7 +2391,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 10415747959817127942
+  ParentId: 7457691035411068540
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1682,7 +2434,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14987358766216652504
+  Id: 8754732566318710677
   Name: "Cinder Block"
   Transform {
     Location {
@@ -1698,9 +2450,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3522817074686701501
-  ChildIds: 14300558834647802701
-  ChildIds: 3663742103181077838
+  ParentId: 16661680688966696832
+  ChildIds: 17016790805880928780
+  ChildIds: 12945771950374699190
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1712,7 +2464,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3663742103181077838
+  Id: 12945771950374699190
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -1726,7 +2478,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 14987358766216652504
+  ParentId: 8754732566318710677
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1769,7 +2521,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14300558834647802701
+  Id: 17016790805880928780
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -1783,7 +2535,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 14987358766216652504
+  ParentId: 8754732566318710677
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1826,7 +2578,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16778972775013434021
+  Id: 282901132453141878
   Name: "Cinder Block"
   Transform {
     Location {
@@ -1842,9 +2594,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3522817074686701501
-  ChildIds: 6364092948709920355
-  ChildIds: 13821253726470864789
+  ParentId: 16661680688966696832
+  ChildIds: 10917340516524051518
+  ChildIds: 14386011272112313665
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1856,7 +2608,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13821253726470864789
+  Id: 14386011272112313665
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -1870,7 +2622,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 16778972775013434021
+  ParentId: 282901132453141878
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1913,7 +2665,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6364092948709920355
+  Id: 10917340516524051518
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -1927,7 +2679,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 16778972775013434021
+  ParentId: 282901132453141878
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1970,7 +2722,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2305862525540604232
+  Id: 17891574220619253331
   Name: "Cinder Block"
   Transform {
     Location {
@@ -1986,9 +2738,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3522817074686701501
-  ChildIds: 190852888193232280
-  ChildIds: 16773376558623856784
+  ParentId: 16661680688966696832
+  ChildIds: 11372245638875578102
+  ChildIds: 6311857226628769358
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2000,7 +2752,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16773376558623856784
+  Id: 6311857226628769358
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -2014,7 +2766,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 2305862525540604232
+  ParentId: 17891574220619253331
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2057,7 +2809,7 @@ Objects {
   }
 }
 Objects {
-  Id: 190852888193232280
+  Id: 11372245638875578102
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -2071,7 +2823,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 2305862525540604232
+  ParentId: 17891574220619253331
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2114,7 +2866,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14442340408003321686
+  Id: 1262601169017541856
   Name: "Cinder Block"
   Transform {
     Location {
@@ -2129,9 +2881,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3522817074686701501
-  ChildIds: 8346730905284679354
-  ChildIds: 18339634204615488145
+  ParentId: 16661680688966696832
+  ChildIds: 1879387016734754421
+  ChildIds: 3276029195333274890
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2143,7 +2895,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18339634204615488145
+  Id: 3276029195333274890
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -2157,7 +2909,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 14442340408003321686
+  ParentId: 1262601169017541856
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2200,7 +2952,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8346730905284679354
+  Id: 1879387016734754421
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -2214,7 +2966,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 14442340408003321686
+  ParentId: 1262601169017541856
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2257,759 +3009,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12609478617883153719
-  Name: "Cinder Block Stack"
-  Transform {
-    Location {
-      X: 455
-      Y: -185
-    }
-    Rotation {
-      Yaw: -89.9999924
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 7205375941805979454
-  ChildIds: 13549279715140932336
-  ChildIds: 15146652050428450294
-  ChildIds: 13028417723305660442
-  ChildIds: 639394766047081644
-  ChildIds: 1146632083204334019
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 1146632083204334019
-  Name: "Cinder Block"
-  Transform {
-    Location {
-      Y: -0.3671875
-      Z: 107.613342
-    }
-    Rotation {
-      Yaw: -86.22332
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 12609478617883153719
-  ChildIds: 12420265686372929765
-  ChildIds: 13702696596276648746
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 13702696596276648746
-  Name: "Pipe - 4-Sided Thick"
-  Transform {
-    Location {
-      X: 19.4248047
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.389636248
-      Y: 0.319426447
-      Z: 0.270251572
-    }
-  }
-  ParentId: 1146632083204334019
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 17240925491654302561
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1.704
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7778675157039074743
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 12420265686372929765
-  Name: "Pipe - 4-Sided Thick"
-  Transform {
-    Location {
-      X: -19.425293
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.389636248
-      Y: 0.319426447
-      Z: 0.270251572
-    }
-  }
-  ParentId: 1146632083204334019
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 17240925491654302561
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1.704
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7778675157039074743
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 639394766047081644
-  Name: "Cinder Block"
-  Transform {
-    Location {
-      Y: -0.1015625
-      Z: 80.8701172
-    }
-    Rotation {
-      Yaw: -78.7232819
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 12609478617883153719
-  ChildIds: 16691579946586887274
-  ChildIds: 9976260760388591738
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 9976260760388591738
-  Name: "Pipe - 4-Sided Thick"
-  Transform {
-    Location {
-      X: 19.4248047
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.389636248
-      Y: 0.319426447
-      Z: 0.270251572
-    }
-  }
-  ParentId: 639394766047081644
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 17240925491654302561
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1.704
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7778675157039074743
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 16691579946586887274
-  Name: "Pipe - 4-Sided Thick"
-  Transform {
-    Location {
-      X: -19.425293
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.389636248
-      Y: 0.319426447
-      Z: 0.270251572
-    }
-  }
-  ParentId: 639394766047081644
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 17240925491654302561
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1.704
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7778675157039074743
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 13028417723305660442
-  Name: "Cinder Block"
-  Transform {
-    Location {
-      Y: 0.592773438
-      Z: 54.446167
-    }
-    Rotation {
-      Yaw: -93.0346909
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 12609478617883153719
-  ChildIds: 15662547900960201128
-  ChildIds: 5134894000451669860
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 5134894000451669860
-  Name: "Pipe - 4-Sided Thick"
-  Transform {
-    Location {
-      X: 19.4248047
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.389636248
-      Y: 0.319426447
-      Z: 0.270251572
-    }
-  }
-  ParentId: 13028417723305660442
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 17240925491654302561
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1.704
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7778675157039074743
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 15662547900960201128
-  Name: "Pipe - 4-Sided Thick"
-  Transform {
-    Location {
-      X: -19.425293
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.389636248
-      Y: 0.319426447
-      Z: 0.270251572
-    }
-  }
-  ParentId: 13028417723305660442
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 17240925491654302561
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1.704
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7778675157039074743
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 15146652050428450294
-  Name: "Cinder Block"
-  Transform {
-    Location {
-      Y: -0.751953125
-      Z: 27.2905273
-    }
-    Rotation {
-      Yaw: -85.6134415
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 12609478617883153719
-  ChildIds: 16855420770290252565
-  ChildIds: 7240958283622325243
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 7240958283622325243
-  Name: "Pipe - 4-Sided Thick"
-  Transform {
-    Location {
-      X: 19.4248047
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.389636248
-      Y: 0.319426447
-      Z: 0.270251572
-    }
-  }
-  ParentId: 15146652050428450294
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 17240925491654302561
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1.704
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7778675157039074743
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 16855420770290252565
-  Name: "Pipe - 4-Sided Thick"
-  Transform {
-    Location {
-      X: -19.425293
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.389636248
-      Y: 0.319426447
-      Z: 0.270251572
-    }
-  }
-  ParentId: 15146652050428450294
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 17240925491654302561
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1.704
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7778675157039074743
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 13549279715140932336
-  Name: "Cinder Block"
-  Transform {
-    Location {
-      Y: 0.626953125
-    }
-    Rotation {
-      Yaw: -89.9999924
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 12609478617883153719
-  ChildIds: 8847050247689832272
-  ChildIds: 10102538211632175038
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 10102538211632175038
-  Name: "Pipe - 4-Sided Thick"
-  Transform {
-    Location {
-      X: 19.4248047
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.389636248
-      Y: 0.319426447
-      Z: 0.270251572
-    }
-  }
-  ParentId: 13549279715140932336
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 17240925491654302561
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1.704
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7778675157039074743
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 8847050247689832272
-  Name: "Pipe - 4-Sided Thick"
-  Transform {
-    Location {
-      X: -19.425293
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.389636248
-      Y: 0.319426447
-      Z: 0.270251572
-    }
-  }
-  ParentId: 13549279715140932336
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 17240925491654302561
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1.704
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7778675157039074743
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 18091337800013168981
+  Id: 10238681914927032445
   Name: "Cinder Block Stack"
   Transform {
     Location {
@@ -3025,12 +3025,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7205375941805979454
-  ChildIds: 6676014060155017435
-  ChildIds: 1183281400316555824
-  ChildIds: 14267957057650595954
-  ChildIds: 10279580801513345773
-  ChildIds: 5686512127789480032
+  ParentId: 13481556437256749091
+  ChildIds: 13644027837895049250
+  ChildIds: 656327548649225251
+  ChildIds: 17586274282046636189
+  ChildIds: 11445460287292149043
+  ChildIds: 7961909438017896406
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3042,7 +3042,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5686512127789480032
+  Id: 7961909438017896406
   Name: "Cinder Block"
   Transform {
     Location {
@@ -3058,9 +3058,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 18091337800013168981
-  ChildIds: 3660269962890319643
-  ChildIds: 11587222902305133734
+  ParentId: 10238681914927032445
+  ChildIds: 4034098128181823631
+  ChildIds: 11924603427611307669
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3072,7 +3072,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11587222902305133734
+  Id: 11924603427611307669
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -3086,7 +3086,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 5686512127789480032
+  ParentId: 7961909438017896406
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3129,7 +3129,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3660269962890319643
+  Id: 4034098128181823631
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -3143,7 +3143,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 5686512127789480032
+  ParentId: 7961909438017896406
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3186,7 +3186,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10279580801513345773
+  Id: 11445460287292149043
   Name: "Cinder Block"
   Transform {
     Location {
@@ -3202,9 +3202,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 18091337800013168981
-  ChildIds: 4190615755242909373
-  ChildIds: 11083016706935349104
+  ParentId: 10238681914927032445
+  ChildIds: 17471447086085659269
+  ChildIds: 15517765871496002507
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3216,7 +3216,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11083016706935349104
+  Id: 15517765871496002507
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -3230,7 +3230,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 10279580801513345773
+  ParentId: 11445460287292149043
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3273,7 +3273,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4190615755242909373
+  Id: 17471447086085659269
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -3287,7 +3287,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 10279580801513345773
+  ParentId: 11445460287292149043
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3330,7 +3330,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14267957057650595954
+  Id: 17586274282046636189
   Name: "Cinder Block"
   Transform {
     Location {
@@ -3346,9 +3346,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 18091337800013168981
-  ChildIds: 78304057929016651
-  ChildIds: 1215533945274177366
+  ParentId: 10238681914927032445
+  ChildIds: 17531045369994691212
+  ChildIds: 12275507270191487475
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3360,7 +3360,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1215533945274177366
+  Id: 12275507270191487475
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -3374,7 +3374,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 14267957057650595954
+  ParentId: 17586274282046636189
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3417,7 +3417,7 @@ Objects {
   }
 }
 Objects {
-  Id: 78304057929016651
+  Id: 17531045369994691212
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -3431,7 +3431,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 14267957057650595954
+  ParentId: 17586274282046636189
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3474,7 +3474,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1183281400316555824
+  Id: 656327548649225251
   Name: "Cinder Block"
   Transform {
     Location {
@@ -3490,9 +3490,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 18091337800013168981
-  ChildIds: 17099768238651379564
-  ChildIds: 10231328032957213289
+  ParentId: 10238681914927032445
+  ChildIds: 7326421782180191715
+  ChildIds: 10030059321724343954
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3504,7 +3504,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10231328032957213289
+  Id: 10030059321724343954
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -3518,7 +3518,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 1183281400316555824
+  ParentId: 656327548649225251
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3561,7 +3561,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17099768238651379564
+  Id: 7326421782180191715
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -3575,7 +3575,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 1183281400316555824
+  ParentId: 656327548649225251
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3618,7 +3618,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6676014060155017435
+  Id: 13644027837895049250
   Name: "Cinder Block"
   Transform {
     Location {
@@ -3633,9 +3633,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 18091337800013168981
-  ChildIds: 3643112195897037526
-  ChildIds: 15584319969227107619
+  ParentId: 10238681914927032445
+  ChildIds: 4863102884493081706
+  ChildIds: 1437086513443175000
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3647,7 +3647,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15584319969227107619
+  Id: 1437086513443175000
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -3661,7 +3661,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 6676014060155017435
+  ParentId: 13644027837895049250
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3704,7 +3704,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3643112195897037526
+  Id: 4863102884493081706
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -3718,7 +3718,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 6676014060155017435
+  ParentId: 13644027837895049250
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3761,7 +3761,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4160840745350628069
+  Id: 11213210862271258148
   Name: "Cinder Block Stack"
   Transform {
     Location {
@@ -3777,12 +3777,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7205375941805979454
-  ChildIds: 239511232965818623
-  ChildIds: 16088030043827201234
-  ChildIds: 7099978975906977030
-  ChildIds: 14513033744245738713
-  ChildIds: 16776919864872329037
+  ParentId: 13481556437256749091
+  ChildIds: 8033814792885134420
+  ChildIds: 11676090783092689292
+  ChildIds: 3997585988568329000
+  ChildIds: 2217636012057244916
+  ChildIds: 526947972177884521
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3794,7 +3794,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16776919864872329037
+  Id: 526947972177884521
   Name: "Cinder Block"
   Transform {
     Location {
@@ -3810,9 +3810,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4160840745350628069
-  ChildIds: 13043570700523371348
-  ChildIds: 7755733630372529732
+  ParentId: 11213210862271258148
+  ChildIds: 5338030782959686223
+  ChildIds: 1564250135870656617
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3824,7 +3824,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7755733630372529732
+  Id: 1564250135870656617
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -3838,7 +3838,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 16776919864872329037
+  ParentId: 526947972177884521
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3881,7 +3881,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13043570700523371348
+  Id: 5338030782959686223
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -3895,7 +3895,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 16776919864872329037
+  ParentId: 526947972177884521
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3938,7 +3938,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14513033744245738713
+  Id: 2217636012057244916
   Name: "Cinder Block"
   Transform {
     Location {
@@ -3954,9 +3954,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4160840745350628069
-  ChildIds: 8138464580272028702
-  ChildIds: 8327213426509903654
+  ParentId: 11213210862271258148
+  ChildIds: 15013881314606557638
+  ChildIds: 11354157851387876039
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3968,7 +3968,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8327213426509903654
+  Id: 11354157851387876039
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -3982,7 +3982,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 14513033744245738713
+  ParentId: 2217636012057244916
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4025,7 +4025,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8138464580272028702
+  Id: 15013881314606557638
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -4039,7 +4039,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 14513033744245738713
+  ParentId: 2217636012057244916
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4082,7 +4082,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7099978975906977030
+  Id: 3997585988568329000
   Name: "Cinder Block"
   Transform {
     Location {
@@ -4098,9 +4098,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4160840745350628069
-  ChildIds: 2538426146673828238
-  ChildIds: 8949010392447961160
+  ParentId: 11213210862271258148
+  ChildIds: 10749071575777613985
+  ChildIds: 13198739180747848079
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4112,7 +4112,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8949010392447961160
+  Id: 13198739180747848079
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -4126,7 +4126,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 7099978975906977030
+  ParentId: 3997585988568329000
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4169,7 +4169,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2538426146673828238
+  Id: 10749071575777613985
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -4183,7 +4183,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 7099978975906977030
+  ParentId: 3997585988568329000
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4226,7 +4226,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16088030043827201234
+  Id: 11676090783092689292
   Name: "Cinder Block"
   Transform {
     Location {
@@ -4242,9 +4242,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4160840745350628069
-  ChildIds: 6008273573222902132
-  ChildIds: 8341176265374314912
+  ParentId: 11213210862271258148
+  ChildIds: 17224135666121651696
+  ChildIds: 6532138389720730553
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4256,7 +4256,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8341176265374314912
+  Id: 6532138389720730553
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -4270,7 +4270,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 16088030043827201234
+  ParentId: 11676090783092689292
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4313,7 +4313,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6008273573222902132
+  Id: 17224135666121651696
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -4327,7 +4327,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 16088030043827201234
+  ParentId: 11676090783092689292
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4370,7 +4370,7 @@ Objects {
   }
 }
 Objects {
-  Id: 239511232965818623
+  Id: 8033814792885134420
   Name: "Cinder Block"
   Transform {
     Location {
@@ -4385,9 +4385,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4160840745350628069
-  ChildIds: 17258074768099899318
-  ChildIds: 12001230426351983816
+  ParentId: 11213210862271258148
+  ChildIds: 15457957343907927192
+  ChildIds: 14493484837768573660
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4399,7 +4399,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12001230426351983816
+  Id: 14493484837768573660
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -4413,7 +4413,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 239511232965818623
+  ParentId: 8033814792885134420
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4456,7 +4456,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17258074768099899318
+  Id: 15457957343907927192
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -4470,7 +4470,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 239511232965818623
+  ParentId: 8033814792885134420
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4513,15 +4513,15 @@ Objects {
   }
 }
 Objects {
-  Id: 6724436787981259875
+  Id: 9986079480313085222
   Name: "Cinder Block Stack"
   Transform {
     Location {
-      X: 480
-      Y: 185
+      X: 390
+      Y: 155
     }
     Rotation {
-      Yaw: -89.9999924
+      Yaw: 179.999954
     }
     Scale {
       X: 1
@@ -4529,12 +4529,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7205375941805979454
-  ChildIds: 3350041823599741397
-  ChildIds: 16493518794069161544
-  ChildIds: 5443565561837199743
-  ChildIds: 5975225214320207563
-  ChildIds: 3410592342333285541
+  ParentId: 13481556437256749091
+  ChildIds: 12275785730204150024
+  ChildIds: 1096999913666630239
+  ChildIds: 5704330162221675761
+  ChildIds: 5076686645139337209
+  ChildIds: 15898036694692613392
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4546,7 +4546,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3410592342333285541
+  Id: 15898036694692613392
   Name: "Cinder Block"
   Transform {
     Location {
@@ -4562,9 +4562,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6724436787981259875
-  ChildIds: 15239357830475301930
-  ChildIds: 11106389293475646817
+  ParentId: 9986079480313085222
+  ChildIds: 11772578660676399797
+  ChildIds: 10271467672502271026
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4576,7 +4576,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11106389293475646817
+  Id: 10271467672502271026
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -4590,7 +4590,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 3410592342333285541
+  ParentId: 15898036694692613392
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4633,7 +4633,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15239357830475301930
+  Id: 11772578660676399797
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -4647,7 +4647,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 3410592342333285541
+  ParentId: 15898036694692613392
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4690,7 +4690,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5975225214320207563
+  Id: 5076686645139337209
   Name: "Cinder Block"
   Transform {
     Location {
@@ -4706,9 +4706,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6724436787981259875
-  ChildIds: 8392917872740163189
-  ChildIds: 6427460230777284851
+  ParentId: 9986079480313085222
+  ChildIds: 15303486764017482554
+  ChildIds: 1294680019480791234
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4720,7 +4720,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6427460230777284851
+  Id: 1294680019480791234
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -4734,7 +4734,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 5975225214320207563
+  ParentId: 5076686645139337209
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4777,7 +4777,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8392917872740163189
+  Id: 15303486764017482554
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -4791,7 +4791,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 5975225214320207563
+  ParentId: 5076686645139337209
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4834,7 +4834,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5443565561837199743
+  Id: 5704330162221675761
   Name: "Cinder Block"
   Transform {
     Location {
@@ -4850,9 +4850,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6724436787981259875
-  ChildIds: 16557836306644954076
-  ChildIds: 8482639000836370718
+  ParentId: 9986079480313085222
+  ChildIds: 3055003630918362455
+  ChildIds: 1089905971265773072
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4864,7 +4864,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8482639000836370718
+  Id: 1089905971265773072
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -4878,7 +4878,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 5443565561837199743
+  ParentId: 5704330162221675761
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4921,7 +4921,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16557836306644954076
+  Id: 3055003630918362455
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -4935,7 +4935,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 5443565561837199743
+  ParentId: 5704330162221675761
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4978,7 +4978,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16493518794069161544
+  Id: 1096999913666630239
   Name: "Cinder Block"
   Transform {
     Location {
@@ -4994,9 +4994,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6724436787981259875
-  ChildIds: 9907968367057694042
-  ChildIds: 1301126628778389828
+  ParentId: 9986079480313085222
+  ChildIds: 18291088780900600843
+  ChildIds: 3108068721017552272
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -5008,7 +5008,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1301126628778389828
+  Id: 3108068721017552272
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -5022,7 +5022,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 16493518794069161544
+  ParentId: 1096999913666630239
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5065,7 +5065,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9907968367057694042
+  Id: 18291088780900600843
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -5079,7 +5079,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 16493518794069161544
+  ParentId: 1096999913666630239
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5122,7 +5122,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3350041823599741397
+  Id: 12275785730204150024
   Name: "Cinder Block"
   Transform {
     Location {
@@ -5137,9 +5137,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6724436787981259875
-  ChildIds: 7182221102459281759
-  ChildIds: 18386605410862288207
+  ParentId: 9986079480313085222
+  ChildIds: 17286813160113585250
+  ChildIds: 3242268901193593148
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -5151,7 +5151,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18386605410862288207
+  Id: 3242268901193593148
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -5165,7 +5165,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 3350041823599741397
+  ParentId: 12275785730204150024
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5208,7 +5208,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7182221102459281759
+  Id: 17286813160113585250
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -5222,7 +5222,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 3350041823599741397
+  ParentId: 12275785730204150024
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5265,7 +5265,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3499938323817840765
+  Id: 7684145813435779648
   Name: "Cinder Block Stack"
   Transform {
     Location {
@@ -5281,12 +5281,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7205375941805979454
-  ChildIds: 11135882875181384610
-  ChildIds: 15969008028650120277
-  ChildIds: 3977628983486017908
-  ChildIds: 7570640560479114607
-  ChildIds: 6428991354369844187
+  ParentId: 13481556437256749091
+  ChildIds: 3515564232011616665
+  ChildIds: 15513731369055158244
+  ChildIds: 3889439901851641118
+  ChildIds: 4654602949405744355
+  ChildIds: 11100159230176629042
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -5298,7 +5298,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6428991354369844187
+  Id: 11100159230176629042
   Name: "Cinder Block"
   Transform {
     Location {
@@ -5314,9 +5314,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3499938323817840765
-  ChildIds: 5921083304005785742
-  ChildIds: 3634415807043194275
+  ParentId: 7684145813435779648
+  ChildIds: 15361028801205010086
+  ChildIds: 11529633006958087008
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -5328,7 +5328,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3634415807043194275
+  Id: 11529633006958087008
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -5342,7 +5342,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 6428991354369844187
+  ParentId: 11100159230176629042
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5385,7 +5385,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5921083304005785742
+  Id: 15361028801205010086
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -5399,7 +5399,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 6428991354369844187
+  ParentId: 11100159230176629042
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5442,7 +5442,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7570640560479114607
+  Id: 4654602949405744355
   Name: "Cinder Block"
   Transform {
     Location {
@@ -5458,9 +5458,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3499938323817840765
-  ChildIds: 11457145156744506107
-  ChildIds: 4823081158347902595
+  ParentId: 7684145813435779648
+  ChildIds: 4067157617659857250
+  ChildIds: 6917447005833855274
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -5472,7 +5472,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4823081158347902595
+  Id: 6917447005833855274
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -5486,7 +5486,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 7570640560479114607
+  ParentId: 4654602949405744355
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5529,7 +5529,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11457145156744506107
+  Id: 4067157617659857250
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -5543,7 +5543,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 7570640560479114607
+  ParentId: 4654602949405744355
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5586,7 +5586,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3977628983486017908
+  Id: 3889439901851641118
   Name: "Cinder Block"
   Transform {
     Location {
@@ -5602,9 +5602,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3499938323817840765
-  ChildIds: 10203264104325100611
-  ChildIds: 14450291052116216107
+  ParentId: 7684145813435779648
+  ChildIds: 10546925065556470505
+  ChildIds: 5894338791529294996
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -5616,7 +5616,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14450291052116216107
+  Id: 5894338791529294996
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -5630,7 +5630,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 3977628983486017908
+  ParentId: 3889439901851641118
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5673,7 +5673,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10203264104325100611
+  Id: 10546925065556470505
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -5687,7 +5687,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 3977628983486017908
+  ParentId: 3889439901851641118
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5730,7 +5730,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15969008028650120277
+  Id: 15513731369055158244
   Name: "Cinder Block"
   Transform {
     Location {
@@ -5746,9 +5746,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3499938323817840765
-  ChildIds: 14894010011386320874
-  ChildIds: 11055258258118817746
+  ParentId: 7684145813435779648
+  ChildIds: 10980461958069337907
+  ChildIds: 10380396608435187590
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -5760,7 +5760,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11055258258118817746
+  Id: 10380396608435187590
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -5774,7 +5774,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 15969008028650120277
+  ParentId: 15513731369055158244
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5817,7 +5817,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14894010011386320874
+  Id: 10980461958069337907
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -5831,7 +5831,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 15969008028650120277
+  ParentId: 15513731369055158244
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5874,7 +5874,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11135882875181384610
+  Id: 3515564232011616665
   Name: "Cinder Block"
   Transform {
     Location {
@@ -5889,9 +5889,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3499938323817840765
-  ChildIds: 2381308366509147846
-  ChildIds: 17193639345238376315
+  ParentId: 7684145813435779648
+  ChildIds: 5323220791812020342
+  ChildIds: 276070783899859331
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -5903,7 +5903,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17193639345238376315
+  Id: 276070783899859331
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -5917,7 +5917,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 11135882875181384610
+  ParentId: 3515564232011616665
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5960,7 +5960,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2381308366509147846
+  Id: 5323220791812020342
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -5974,7 +5974,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 11135882875181384610
+  ParentId: 3515564232011616665
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -6017,1509 +6017,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6817562753674832801
-  Name: "Cinder Block Stack"
-  Transform {
-    Location {
-      X: 711.515198
-      Y: -170.811523
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 7205375941805979454
-  ChildIds: 1819083708277748535
-  ChildIds: 4954249999332096956
-  ChildIds: 3934851781635519383
-  ChildIds: 6236747279290282483
-  ChildIds: 7469634756177366916
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 7469634756177366916
-  Name: "Cinder Block"
-  Transform {
-    Location {
-      Y: -0.3671875
-      Z: 107.613342
-    }
-    Rotation {
-      Yaw: -86.22332
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6817562753674832801
-  ChildIds: 14521213622242086224
-  ChildIds: 10707898194417925600
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 10707898194417925600
-  Name: "Pipe - 4-Sided Thick"
-  Transform {
-    Location {
-      X: 19.4248047
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.389636248
-      Y: 0.319426447
-      Z: 0.270251572
-    }
-  }
-  ParentId: 7469634756177366916
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 17240925491654302561
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1.704
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7778675157039074743
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 14521213622242086224
-  Name: "Pipe - 4-Sided Thick"
-  Transform {
-    Location {
-      X: -19.425293
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.389636248
-      Y: 0.319426447
-      Z: 0.270251572
-    }
-  }
-  ParentId: 7469634756177366916
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 17240925491654302561
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1.704
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7778675157039074743
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 6236747279290282483
-  Name: "Cinder Block"
-  Transform {
-    Location {
-      Y: -0.1015625
-      Z: 80.8701172
-    }
-    Rotation {
-      Yaw: -78.7232819
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6817562753674832801
-  ChildIds: 17517475348422342276
-  ChildIds: 821017725443531253
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 821017725443531253
-  Name: "Pipe - 4-Sided Thick"
-  Transform {
-    Location {
-      X: 19.4248047
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.389636248
-      Y: 0.319426447
-      Z: 0.270251572
-    }
-  }
-  ParentId: 6236747279290282483
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 17240925491654302561
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1.704
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7778675157039074743
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 17517475348422342276
-  Name: "Pipe - 4-Sided Thick"
-  Transform {
-    Location {
-      X: -19.425293
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.389636248
-      Y: 0.319426447
-      Z: 0.270251572
-    }
-  }
-  ParentId: 6236747279290282483
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 17240925491654302561
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1.704
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7778675157039074743
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 3934851781635519383
-  Name: "Cinder Block"
-  Transform {
-    Location {
-      Y: 0.592773438
-      Z: 54.446167
-    }
-    Rotation {
-      Yaw: -93.0346909
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6817562753674832801
-  ChildIds: 17332883218025560617
-  ChildIds: 17076729373233644646
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 17076729373233644646
-  Name: "Pipe - 4-Sided Thick"
-  Transform {
-    Location {
-      X: 19.4248047
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.389636248
-      Y: 0.319426447
-      Z: 0.270251572
-    }
-  }
-  ParentId: 3934851781635519383
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 17240925491654302561
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1.704
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7778675157039074743
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 17332883218025560617
-  Name: "Pipe - 4-Sided Thick"
-  Transform {
-    Location {
-      X: -19.425293
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.389636248
-      Y: 0.319426447
-      Z: 0.270251572
-    }
-  }
-  ParentId: 3934851781635519383
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 17240925491654302561
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1.704
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7778675157039074743
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 4954249999332096956
-  Name: "Cinder Block"
-  Transform {
-    Location {
-      Y: -0.751953125
-      Z: 27.2905273
-    }
-    Rotation {
-      Yaw: -85.6134415
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6817562753674832801
-  ChildIds: 2378601164341954893
-  ChildIds: 2528329660742386352
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 2528329660742386352
-  Name: "Pipe - 4-Sided Thick"
-  Transform {
-    Location {
-      X: 19.4248047
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.389636248
-      Y: 0.319426447
-      Z: 0.270251572
-    }
-  }
-  ParentId: 4954249999332096956
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 17240925491654302561
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1.704
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7778675157039074743
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 2378601164341954893
-  Name: "Pipe - 4-Sided Thick"
-  Transform {
-    Location {
-      X: -19.425293
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.389636248
-      Y: 0.319426447
-      Z: 0.270251572
-    }
-  }
-  ParentId: 4954249999332096956
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 17240925491654302561
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1.704
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7778675157039074743
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 1819083708277748535
-  Name: "Cinder Block"
-  Transform {
-    Location {
-      Y: 0.626953125
-    }
-    Rotation {
-      Yaw: -89.9999924
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6817562753674832801
-  ChildIds: 1547446010700883276
-  ChildIds: 3294380161290086666
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 3294380161290086666
-  Name: "Pipe - 4-Sided Thick"
-  Transform {
-    Location {
-      X: 19.4248047
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.389636248
-      Y: 0.319426447
-      Z: 0.270251572
-    }
-  }
-  ParentId: 1819083708277748535
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 17240925491654302561
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1.704
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7778675157039074743
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 1547446010700883276
-  Name: "Pipe - 4-Sided Thick"
-  Transform {
-    Location {
-      X: -19.425293
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.389636248
-      Y: 0.319426447
-      Z: 0.270251572
-    }
-  }
-  ParentId: 1819083708277748535
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 17240925491654302561
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1.704
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7778675157039074743
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 3555805178680758918
-  Name: "Cinder Block Stack"
-  Transform {
-    Location {
-      X: 715.552307
-      Y: 162.842773
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 7205375941805979454
-  ChildIds: 18060321669170599395
-  ChildIds: 12495305481435910843
-  ChildIds: 10000267512654631618
-  ChildIds: 874514480756660322
-  ChildIds: 18016996041210522124
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 18016996041210522124
-  Name: "Cinder Block"
-  Transform {
-    Location {
-      Y: -0.3671875
-      Z: 107.613342
-    }
-    Rotation {
-      Yaw: -86.22332
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3555805178680758918
-  ChildIds: 17136205723582115326
-  ChildIds: 3971303558074297987
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 3971303558074297987
-  Name: "Pipe - 4-Sided Thick"
-  Transform {
-    Location {
-      X: 19.4248047
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.389636248
-      Y: 0.319426447
-      Z: 0.270251572
-    }
-  }
-  ParentId: 18016996041210522124
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 17240925491654302561
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1.704
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7778675157039074743
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 17136205723582115326
-  Name: "Pipe - 4-Sided Thick"
-  Transform {
-    Location {
-      X: -19.425293
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.389636248
-      Y: 0.319426447
-      Z: 0.270251572
-    }
-  }
-  ParentId: 18016996041210522124
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 17240925491654302561
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1.704
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7778675157039074743
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 874514480756660322
-  Name: "Cinder Block"
-  Transform {
-    Location {
-      Y: -0.1015625
-      Z: 80.8701172
-    }
-    Rotation {
-      Yaw: -78.7232819
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3555805178680758918
-  ChildIds: 7002378255546964958
-  ChildIds: 13710837739432554946
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 13710837739432554946
-  Name: "Pipe - 4-Sided Thick"
-  Transform {
-    Location {
-      X: 19.4248047
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.389636248
-      Y: 0.319426447
-      Z: 0.270251572
-    }
-  }
-  ParentId: 874514480756660322
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 17240925491654302561
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1.704
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7778675157039074743
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 7002378255546964958
-  Name: "Pipe - 4-Sided Thick"
-  Transform {
-    Location {
-      X: -19.425293
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.389636248
-      Y: 0.319426447
-      Z: 0.270251572
-    }
-  }
-  ParentId: 874514480756660322
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 17240925491654302561
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1.704
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7778675157039074743
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 10000267512654631618
-  Name: "Cinder Block"
-  Transform {
-    Location {
-      Y: 0.592773438
-      Z: 54.446167
-    }
-    Rotation {
-      Yaw: -93.0346909
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3555805178680758918
-  ChildIds: 6771862939217402677
-  ChildIds: 1110387894201262149
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 1110387894201262149
-  Name: "Pipe - 4-Sided Thick"
-  Transform {
-    Location {
-      X: 19.4248047
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.389636248
-      Y: 0.319426447
-      Z: 0.270251572
-    }
-  }
-  ParentId: 10000267512654631618
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 17240925491654302561
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1.704
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7778675157039074743
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 6771862939217402677
-  Name: "Pipe - 4-Sided Thick"
-  Transform {
-    Location {
-      X: -19.425293
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.389636248
-      Y: 0.319426447
-      Z: 0.270251572
-    }
-  }
-  ParentId: 10000267512654631618
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 17240925491654302561
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1.704
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7778675157039074743
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 12495305481435910843
-  Name: "Cinder Block"
-  Transform {
-    Location {
-      Y: -0.751953125
-      Z: 27.2905273
-    }
-    Rotation {
-      Yaw: -85.6134415
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3555805178680758918
-  ChildIds: 9680024663636342333
-  ChildIds: 8742191714907397302
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 8742191714907397302
-  Name: "Pipe - 4-Sided Thick"
-  Transform {
-    Location {
-      X: 19.4248047
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.389636248
-      Y: 0.319426447
-      Z: 0.270251572
-    }
-  }
-  ParentId: 12495305481435910843
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 17240925491654302561
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1.704
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7778675157039074743
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 9680024663636342333
-  Name: "Pipe - 4-Sided Thick"
-  Transform {
-    Location {
-      X: -19.425293
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.389636248
-      Y: 0.319426447
-      Z: 0.270251572
-    }
-  }
-  ParentId: 12495305481435910843
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 17240925491654302561
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1.704
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7778675157039074743
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 18060321669170599395
-  Name: "Cinder Block"
-  Transform {
-    Location {
-      Y: 0.626953125
-    }
-    Rotation {
-      Yaw: -89.9999924
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3555805178680758918
-  ChildIds: 15934994346684348421
-  ChildIds: 17573286606511635144
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 17573286606511635144
-  Name: "Pipe - 4-Sided Thick"
-  Transform {
-    Location {
-      X: 19.4248047
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.389636248
-      Y: 0.319426447
-      Z: 0.270251572
-    }
-  }
-  ParentId: 18060321669170599395
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 17240925491654302561
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1.704
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7778675157039074743
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 15934994346684348421
-  Name: "Pipe - 4-Sided Thick"
-  Transform {
-    Location {
-      X: -19.425293
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.389636248
-      Y: 0.319426447
-      Z: 0.270251572
-    }
-  }
-  ParentId: 18060321669170599395
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 17240925491654302561
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1.704
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7778675157039074743
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 4951980448528231244
+  Id: 13697353339182597212
   Name: "Cinder Block Stack"
   Transform {
     Location {
@@ -7534,12 +6032,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7205375941805979454
-  ChildIds: 12257128107442459345
-  ChildIds: 17148226072713164259
-  ChildIds: 10210050367529707142
-  ChildIds: 12999784611935565522
-  ChildIds: 9895811590620826911
+  ParentId: 13481556437256749091
+  ChildIds: 17279230678243040300
+  ChildIds: 17413691143936904043
+  ChildIds: 5711015041420568745
+  ChildIds: 11662446672057575039
+  ChildIds: 8383873049451337596
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -7551,7 +6049,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9895811590620826911
+  Id: 8383873049451337596
   Name: "Cinder Block"
   Transform {
     Location {
@@ -7567,9 +6065,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4951980448528231244
-  ChildIds: 10039889322371885878
-  ChildIds: 11553778494639624592
+  ParentId: 13697353339182597212
+  ChildIds: 3131192532704901708
+  ChildIds: 4377930157072573788
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -7581,7 +6079,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11553778494639624592
+  Id: 4377930157072573788
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -7595,7 +6093,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 9895811590620826911
+  ParentId: 8383873049451337596
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7638,7 +6136,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10039889322371885878
+  Id: 3131192532704901708
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -7652,7 +6150,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 9895811590620826911
+  ParentId: 8383873049451337596
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7695,7 +6193,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12999784611935565522
+  Id: 11662446672057575039
   Name: "Cinder Block"
   Transform {
     Location {
@@ -7711,9 +6209,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4951980448528231244
-  ChildIds: 6864758523961860160
-  ChildIds: 7502384856743681993
+  ParentId: 13697353339182597212
+  ChildIds: 8177399061321154387
+  ChildIds: 12304224598209723635
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -7725,7 +6223,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7502384856743681993
+  Id: 12304224598209723635
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -7739,7 +6237,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 12999784611935565522
+  ParentId: 11662446672057575039
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7782,7 +6280,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6864758523961860160
+  Id: 8177399061321154387
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -7796,7 +6294,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 12999784611935565522
+  ParentId: 11662446672057575039
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7839,7 +6337,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10210050367529707142
+  Id: 5711015041420568745
   Name: "Cinder Block"
   Transform {
     Location {
@@ -7855,9 +6353,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4951980448528231244
-  ChildIds: 4255674768481097905
-  ChildIds: 8532332412797385286
+  ParentId: 13697353339182597212
+  ChildIds: 2272330297872430256
+  ChildIds: 3479464129840249847
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -7869,7 +6367,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8532332412797385286
+  Id: 3479464129840249847
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -7883,7 +6381,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 10210050367529707142
+  ParentId: 5711015041420568745
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7926,7 +6424,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4255674768481097905
+  Id: 2272330297872430256
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -7940,7 +6438,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 10210050367529707142
+  ParentId: 5711015041420568745
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -7983,7 +6481,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17148226072713164259
+  Id: 17413691143936904043
   Name: "Cinder Block"
   Transform {
     Location {
@@ -7999,9 +6497,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4951980448528231244
-  ChildIds: 937384990397892453
-  ChildIds: 9310331825944273472
+  ParentId: 13697353339182597212
+  ChildIds: 2024838903403166316
+  ChildIds: 9066919769643683920
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8013,7 +6511,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9310331825944273472
+  Id: 9066919769643683920
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -8027,7 +6525,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 17148226072713164259
+  ParentId: 17413691143936904043
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8070,7 +6568,7 @@ Objects {
   }
 }
 Objects {
-  Id: 937384990397892453
+  Id: 2024838903403166316
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -8084,7 +6582,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 17148226072713164259
+  ParentId: 17413691143936904043
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8127,7 +6625,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12257128107442459345
+  Id: 17279230678243040300
   Name: "Cinder Block"
   Transform {
     Location {
@@ -8142,9 +6640,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4951980448528231244
-  ChildIds: 11395731566506568507
-  ChildIds: 16161835280279397497
+  ParentId: 13697353339182597212
+  ChildIds: 4874965911415441228
+  ChildIds: 17321839785502293587
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8156,7 +6654,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16161835280279397497
+  Id: 17321839785502293587
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -8170,7 +6668,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 12257128107442459345
+  ParentId: 17279230678243040300
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8213,7 +6711,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11395731566506568507
+  Id: 4874965911415441228
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -8227,7 +6725,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 12257128107442459345
+  ParentId: 17279230678243040300
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8270,7 +6768,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3747246218569123305
+  Id: 17328415855361371980
   Name: "Cinder Block Stack"
   Transform {
     Location {
@@ -8285,12 +6783,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7205375941805979454
-  ChildIds: 10194816857491782708
-  ChildIds: 9082214572752525914
-  ChildIds: 363233387847053309
-  ChildIds: 3580106962398667728
-  ChildIds: 15800846555447166496
+  ParentId: 13481556437256749091
+  ChildIds: 5743638156920278816
+  ChildIds: 3509954108903221952
+  ChildIds: 4517188008737774279
+  ChildIds: 967999528697122413
+  ChildIds: 10349624717993413897
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8302,7 +6800,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15800846555447166496
+  Id: 10349624717993413897
   Name: "Cinder Block"
   Transform {
     Location {
@@ -8318,9 +6816,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3747246218569123305
-  ChildIds: 5618931252739156836
-  ChildIds: 242406798194561903
+  ParentId: 17328415855361371980
+  ChildIds: 10723487080455715395
+  ChildIds: 9578554007755306733
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8332,7 +6830,7 @@ Objects {
   }
 }
 Objects {
-  Id: 242406798194561903
+  Id: 9578554007755306733
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -8346,7 +6844,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 15800846555447166496
+  ParentId: 10349624717993413897
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8389,7 +6887,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5618931252739156836
+  Id: 10723487080455715395
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -8403,7 +6901,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 15800846555447166496
+  ParentId: 10349624717993413897
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8446,7 +6944,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3580106962398667728
+  Id: 967999528697122413
   Name: "Cinder Block"
   Transform {
     Location {
@@ -8462,9 +6960,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3747246218569123305
-  ChildIds: 7584341766717057157
-  ChildIds: 18140294705375895076
+  ParentId: 17328415855361371980
+  ChildIds: 6839016972511070384
+  ChildIds: 10975082126142606665
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8476,7 +6974,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18140294705375895076
+  Id: 10975082126142606665
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -8490,7 +6988,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 3580106962398667728
+  ParentId: 967999528697122413
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8533,7 +7031,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7584341766717057157
+  Id: 6839016972511070384
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -8547,7 +7045,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 3580106962398667728
+  ParentId: 967999528697122413
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8590,7 +7088,7 @@ Objects {
   }
 }
 Objects {
-  Id: 363233387847053309
+  Id: 4517188008737774279
   Name: "Cinder Block"
   Transform {
     Location {
@@ -8606,9 +7104,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3747246218569123305
-  ChildIds: 16459147945916307018
-  ChildIds: 9045681558280025817
+  ParentId: 17328415855361371980
+  ChildIds: 7276646575414039967
+  ChildIds: 727979870235960498
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8620,7 +7118,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9045681558280025817
+  Id: 727979870235960498
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -8634,7 +7132,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 363233387847053309
+  ParentId: 4517188008737774279
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8677,7 +7175,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16459147945916307018
+  Id: 7276646575414039967
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -8691,7 +7189,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 363233387847053309
+  ParentId: 4517188008737774279
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8734,7 +7232,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9082214572752525914
+  Id: 3509954108903221952
   Name: "Cinder Block"
   Transform {
     Location {
@@ -8750,9 +7248,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3747246218569123305
-  ChildIds: 17317646140793998911
-  ChildIds: 1757558666018522915
+  ParentId: 17328415855361371980
+  ChildIds: 13078861841330549828
+  ChildIds: 6680019717006410045
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8764,7 +7262,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1757558666018522915
+  Id: 6680019717006410045
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -8778,7 +7276,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 9082214572752525914
+  ParentId: 3509954108903221952
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8821,7 +7319,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17317646140793998911
+  Id: 13078861841330549828
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -8835,7 +7333,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 9082214572752525914
+  ParentId: 3509954108903221952
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8878,7 +7376,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10194816857491782708
+  Id: 5743638156920278816
   Name: "Cinder Block"
   Transform {
     Location {
@@ -8893,9 +7391,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3747246218569123305
-  ChildIds: 11523011100926150491
-  ChildIds: 18084766194049294744
+  ParentId: 17328415855361371980
+  ChildIds: 6718080731841323
+  ChildIds: 723428667916516747
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8907,7 +7405,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18084766194049294744
+  Id: 723428667916516747
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -8921,7 +7419,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 10194816857491782708
+  ParentId: 5743638156920278816
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -8964,7 +7462,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11523011100926150491
+  Id: 6718080731841323
   Name: "Pipe - 4-Sided Thick"
   Transform {
     Location {
@@ -8978,7 +7476,7 @@ Objects {
       Z: 0.270251572
     }
   }
-  ParentId: 10194816857491782708
+  ParentId: 5743638156920278816
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"

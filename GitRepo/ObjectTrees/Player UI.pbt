@@ -1,6 +1,32 @@
 Name: "Player UI"
 RootId: 9598348754977261683
 Objects {
+  Id: 12847672599377286452
+  Name: "PlayerPointsUI"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9598348754977261683
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "PlayerPointsUI"
+  }
+}
+Objects {
   Id: 17265981028320958925
   Name: "Props Alive UI"
   Transform {

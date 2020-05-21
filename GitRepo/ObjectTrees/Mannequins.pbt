@@ -5,9 +5,9 @@ Objects {
   Name: "mannequin_guy"
   Transform {
     Location {
-      X: -735
-      Y: -8625
-      Z: 750
+      X: -6200
+      Y: -1335
+      Z: 10.173584
     }
     Rotation {
       Yaw: 89.9999542

@@ -6523,6 +6523,7 @@ Objects {
   Name: "Tire"
   Transform {
     Location {
+      X: -4770
       Y: -1605
       Z: 165
     }
@@ -6830,8 +6831,9 @@ Objects {
   Name: "Wood Shelving"
   Transform {
     Location {
+      X: -4770
       Y: -2950
-      Z: 235
+      Z: 235.224609
     }
     Rotation {
     }
@@ -7827,14 +7829,15 @@ Objects {
     Location {
       X: 125
       Y: 15
+      Z: 23.3214417
     }
     Rotation {
       Yaw: 179.999786
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 0.794490695
+      Y: 0.794490695
+      Z: 0.794490695
     }
   }
   ParentId: 4864474195542971676
@@ -8773,8 +8776,9 @@ Objects {
   Name: "Metal Shelving"
   Transform {
     Location {
-      X: -100
+      X: -4870
       Y: -2295
+      Z: 0.224609375
     }
     Rotation {
     }

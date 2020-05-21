@@ -1,18 +1,18 @@
 Name: "lights"
-RootId: 1138408001909404105
+RootId: 13586412114271325386
 Objects {
-  Id: 10563452425732504834
+  Id: 13007940332144506555
   Name: "Spotlight"
   Transform {
     Location {
-      X: 798.002808
+      X: 478.002808
       Y: 86.0488281
       Z: 65.1318359
     }
     Rotation {
-      Pitch: -0.368714094
+      Pitch: -0.368713379
       Yaw: -108.34549
-      Roll: -1.33749354
+      Roll: -1.3374939
     }
     Scale {
       X: 0.261803836
@@ -20,10 +20,10 @@ Objects {
       Z: 0.261803836
     }
   }
-  ParentId: 1138408001909404105
-  ChildIds: 13241858720048334628
-  ChildIds: 12552383227508302113
-  ChildIds: 3640551370924822146
+  ParentId: 13586412114271325386
+  ChildIds: 8151759186671566558
+  ChildIds: 16514462730911120077
+  ChildIds: 6132978309395967167
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -43,7 +43,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3640551370924822146
+  Id: 6132978309395967167
   Name: "Cube"
   Transform {
     Location {
@@ -60,7 +60,7 @@ Objects {
       Z: 0.25
     }
   }
-  ParentId: 10563452425732504834
+  ParentId: 13007940332144506555
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -107,7 +107,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12552383227508302113
+  Id: 16514462730911120077
   Name: "Pipe - 4-Sided Thin"
   Transform {
     Location {
@@ -124,7 +124,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 10563452425732504834
+  ParentId: 13007940332144506555
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -168,7 +168,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13241858720048334628
+  Id: 8151759186671566558
   Name: "Cube"
   Transform {
     Location {
@@ -184,7 +184,7 @@ Objects {
       Z: 0.3
     }
   }
-  ParentId: 10563452425732504834
+  ParentId: 13007940332144506555
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -228,18 +228,18 @@ Objects {
   }
 }
 Objects {
-  Id: 18441336204326299773
+  Id: 11325829679741764214
   Name: "Spotlight"
   Transform {
     Location {
-      X: 795.392456
+      X: 475.392456
       Y: 125.882813
       Z: 65.1318359
     }
     Rotation {
-      Pitch: -0.368714094
+      Pitch: -0.368713379
       Yaw: -78.3451233
-      Roll: -1.33749366
+      Roll: -1.3374939
     }
     Scale {
       X: 0.261803836
@@ -247,10 +247,10 @@ Objects {
       Z: 0.261803836
     }
   }
-  ParentId: 1138408001909404105
-  ChildIds: 3133063510264000267
-  ChildIds: 6605512213786070886
-  ChildIds: 16394405684533059356
+  ParentId: 13586412114271325386
+  ChildIds: 10405421251478518709
+  ChildIds: 2637684939595925589
+  ChildIds: 5389819948472424765
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -270,7 +270,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16394405684533059356
+  Id: 5389819948472424765
   Name: "Cube"
   Transform {
     Location {
@@ -287,7 +287,7 @@ Objects {
       Z: 0.25
     }
   }
-  ParentId: 18441336204326299773
+  ParentId: 11325829679741764214
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -334,7 +334,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6605512213786070886
+  Id: 2637684939595925589
   Name: "Pipe - 4-Sided Thin"
   Transform {
     Location {
@@ -351,7 +351,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 18441336204326299773
+  ParentId: 11325829679741764214
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -395,7 +395,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3133063510264000267
+  Id: 10405421251478518709
   Name: "Cube"
   Transform {
     Location {
@@ -411,7 +411,7 @@ Objects {
       Z: 0.3
     }
   }
-  ParentId: 18441336204326299773
+  ParentId: 11325829679741764214
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -455,7 +455,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6330758724075141624
+  Id: 11446215223564105658
   Name: "Spotlight"
   Transform {
     Location {
@@ -474,10 +474,10 @@ Objects {
       Z: 0.261803836
     }
   }
-  ParentId: 1138408001909404105
-  ChildIds: 14958832419855102808
-  ChildIds: 2517011294403946228
-  ChildIds: 16658783739542778745
+  ParentId: 13586412114271325386
+  ChildIds: 12665575140036513409
+  ChildIds: 12787763731457403516
+  ChildIds: 17619855520924049670
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -497,7 +497,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16658783739542778745
+  Id: 17619855520924049670
   Name: "Cube"
   Transform {
     Location {
@@ -514,7 +514,7 @@ Objects {
       Z: 0.25
     }
   }
-  ParentId: 6330758724075141624
+  ParentId: 11446215223564105658
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -561,7 +561,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2517011294403946228
+  Id: 12787763731457403516
   Name: "Pipe - 4-Sided Thin"
   Transform {
     Location {
@@ -578,7 +578,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 6330758724075141624
+  ParentId: 11446215223564105658
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -622,7 +622,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14958832419855102808
+  Id: 12665575140036513409
   Name: "Cube"
   Transform {
     Location {
@@ -638,7 +638,7 @@ Objects {
       Z: 0.3
     }
   }
-  ParentId: 6330758724075141624
+  ParentId: 11446215223564105658
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -682,7 +682,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9873851848677080115
+  Id: 8523587244187084879
   Name: "Spotlight"
   Transform {
     Location {
@@ -701,10 +701,10 @@ Objects {
       Z: 0.261803836
     }
   }
-  ParentId: 1138408001909404105
-  ChildIds: 12451891710139340075
-  ChildIds: 876815610179363966
-  ChildIds: 17541478306019385037
+  ParentId: 13586412114271325386
+  ChildIds: 7759403993435402254
+  ChildIds: 15766295110916217629
+  ChildIds: 12135595066501837525
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -724,7 +724,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17541478306019385037
+  Id: 12135595066501837525
   Name: "Cube"
   Transform {
     Location {
@@ -741,7 +741,7 @@ Objects {
       Z: 0.25
     }
   }
-  ParentId: 9873851848677080115
+  ParentId: 8523587244187084879
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -788,7 +788,7 @@ Objects {
   }
 }
 Objects {
-  Id: 876815610179363966
+  Id: 15766295110916217629
   Name: "Pipe - 4-Sided Thin"
   Transform {
     Location {
@@ -805,7 +805,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 9873851848677080115
+  ParentId: 8523587244187084879
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -849,7 +849,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12451891710139340075
+  Id: 7759403993435402254
   Name: "Cube"
   Transform {
     Location {
@@ -865,7 +865,7 @@ Objects {
       Z: 0.3
     }
   }
-  ParentId: 9873851848677080115
+  ParentId: 8523587244187084879
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -909,7 +909,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5844127656130786627
+  Id: 10991375964882480524
   Name: "Spotlight"
   Transform {
     Location {
@@ -927,10 +927,10 @@ Objects {
       Z: 0.261803836
     }
   }
-  ParentId: 1138408001909404105
-  ChildIds: 798522800253953738
-  ChildIds: 5087920504017633362
-  ChildIds: 12861668773011678314
+  ParentId: 13586412114271325386
+  ChildIds: 9591868270352245871
+  ChildIds: 15664250751632163829
+  ChildIds: 12233557105526690189
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -950,7 +950,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12861668773011678314
+  Id: 12233557105526690189
   Name: "Cube"
   Transform {
     Location {
@@ -967,7 +967,7 @@ Objects {
       Z: 0.25
     }
   }
-  ParentId: 5844127656130786627
+  ParentId: 10991375964882480524
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1014,7 +1014,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5087920504017633362
+  Id: 15664250751632163829
   Name: "Pipe - 4-Sided Thin"
   Transform {
     Location {
@@ -1031,7 +1031,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 5844127656130786627
+  ParentId: 10991375964882480524
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1075,7 +1075,7 @@ Objects {
   }
 }
 Objects {
-  Id: 798522800253953738
+  Id: 9591868270352245871
   Name: "Cube"
   Transform {
     Location {
@@ -1091,7 +1091,7 @@ Objects {
       Z: 0.3
     }
   }
-  ParentId: 5844127656130786627
+  ParentId: 10991375964882480524
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1135,7 +1135,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10821156940170752416
+  Id: 6605749492673077763
   Name: "Spotlight"
   Transform {
     Location {
@@ -1153,10 +1153,10 @@ Objects {
       Z: 0.261803836
     }
   }
-  ParentId: 1138408001909404105
-  ChildIds: 6467799035000965581
-  ChildIds: 18410934095421695130
-  ChildIds: 7640613230410989158
+  ParentId: 13586412114271325386
+  ChildIds: 4083260180089844306
+  ChildIds: 15285468158050142020
+  ChildIds: 10960557414511975719
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1176,7 +1176,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7640613230410989158
+  Id: 10960557414511975719
   Name: "Cube"
   Transform {
     Location {
@@ -1193,7 +1193,7 @@ Objects {
       Z: 0.25
     }
   }
-  ParentId: 10821156940170752416
+  ParentId: 6605749492673077763
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1240,7 +1240,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18410934095421695130
+  Id: 15285468158050142020
   Name: "Pipe - 4-Sided Thin"
   Transform {
     Location {
@@ -1257,7 +1257,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 10821156940170752416
+  ParentId: 6605749492673077763
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1301,7 +1301,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6467799035000965581
+  Id: 4083260180089844306
   Name: "Cube"
   Transform {
     Location {
@@ -1317,7 +1317,7 @@ Objects {
       Z: 0.3
     }
   }
-  ParentId: 10821156940170752416
+  ParentId: 6605749492673077763
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1361,7 +1361,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9646331459804876832
+  Id: 9495284256697911589
   Name: "Spotlight"
   Transform {
     Location {
@@ -1379,10 +1379,10 @@ Objects {
       Z: 0.261803836
     }
   }
-  ParentId: 1138408001909404105
-  ChildIds: 9482411922321543742
-  ChildIds: 4637426945285608702
-  ChildIds: 10038027374066391561
+  ParentId: 13586412114271325386
+  ChildIds: 10878816013649513668
+  ChildIds: 1360230495468815592
+  ChildIds: 2666984082786312946
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1402,7 +1402,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10038027374066391561
+  Id: 2666984082786312946
   Name: "Cube"
   Transform {
     Location {
@@ -1419,7 +1419,7 @@ Objects {
       Z: 0.25
     }
   }
-  ParentId: 9646331459804876832
+  ParentId: 9495284256697911589
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1466,7 +1466,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4637426945285608702
+  Id: 1360230495468815592
   Name: "Pipe - 4-Sided Thin"
   Transform {
     Location {
@@ -1483,7 +1483,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 9646331459804876832
+  ParentId: 9495284256697911589
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1527,7 +1527,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9482411922321543742
+  Id: 10878816013649513668
   Name: "Cube"
   Transform {
     Location {
@@ -1543,7 +1543,7 @@ Objects {
       Z: 0.3
     }
   }
-  ParentId: 9646331459804876832
+  ParentId: 9495284256697911589
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
